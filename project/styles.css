@@ -1,0 +1,382 @@
+/* ─────────────────────────────────────────────
+   ŠKOLSKI GLAS — editorial system
+   Boje sa korice se koriste kao akcenti, ne kao osnova.
+   Cilj: ozbiljan časopis, ne dječji zin.
+   ───────────────────────────────────────────── */
+
+:root {
+  /* Brand colors */
+  --teal: #2BB8BC;
+  --teal-deep: #1A8E92;
+  --pink: #E5217E;
+  --pink-hot: #FF2E8E;
+  --orange: #F47C2C;
+  --orange-deep: #E66510;
+  --yellow: #FFC93C;
+  --purple: #8B3F9C;
+  --purple-deep: #6A2B7A;
+  --blue: #2563EB;
+  --blue-bright: #2E7DE9;
+  --sky: #5AB6E8;
+  --navy: #1A2851;
+  --navy-deep: #0F1A3A;
+
+  /* Neutrals */
+  --cream: #FAF6EF;
+  --cream-warm: #F5EFE3;
+  --paper: #FFFFFF;
+  --ink: #1A2851;
+  --ink-soft: #3D4B73;
+  --ink-mute: #7A8499;
+  --line: #E5DDC9;
+  --line-strong: #C8BFA8;
+
+  /* Type — Cyrillic-capable */
+  --sans: 'Manrope', system-ui, -apple-system, sans-serif;
+  --serif: 'Lora', 'PT Serif', Georgia, serif;
+  --script: 'Caveat', cursive;
+}
+
+* { box-sizing: border-box; }
+
+/* Magazine page baseline */
+.mag-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  overflow: hidden;
+}
+
+.mag-page--cream { background: var(--cream); }
+.mag-page--warm { background: var(--cream-warm); }
+.mag-page--navy { background: var(--navy); color: var(--cream); }
+
+/* Running header — top of every interior page */
+.run-head {
+  position: absolute;
+  top: 32px;
+  left: 50px;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 12px;
+}
+.run-head .accent {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.run-head .accent::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent, var(--ink));
+}
+
+/* Folio — page number */
+.folio {
+  position: absolute;
+  bottom: 28px;
+  left: 50px;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.folio .num {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: 0;
+}
+
+/* Section marker — small label above headline */
+.section-marker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.26em;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--accent, var(--pink));
+}
+.section-marker::before {
+  content: '';
+  width: 28px;
+  height: 3px;
+  background: var(--accent, var(--pink));
+}
+
+/* Kicker — smaller intro line above headline */
+.kicker {
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+
+/* Headlines */
+.headline {
+  font-family: var(--sans);
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  line-height: 0.96;
+}
+.headline-xl { font-size: 64px; }
+.headline-lg { font-size: 48px; }
+.headline-md { font-size: 36px; }
+.headline-sm { font-size: 26px; }
+
+.headline em {
+  font-style: normal;
+  color: var(--accent, var(--pink));
+}
+
+/* Deck — subhead under headline */
+.deck {
+  font-family: var(--serif);
+  font-size: 16px;
+  font-style: italic;
+  color: var(--ink-soft);
+  line-height: 1.45;
+  max-width: 560px;
+}
+
+/* Article body */
+.article-body {
+  font-family: var(--serif);
+  font-size: 12.5px;
+  line-height: 1.62;
+  color: var(--ink);
+  text-align: justify;
+  hyphens: auto;
+}
+.article-body p { margin: 0 0 10px; }
+.article-body p:last-child { margin-bottom: 0; }
+.article-body strong { font-weight: 700; color: var(--ink); }
+
+/* 2-column body */
+.cols-2 {
+  column-count: 2;
+  column-gap: 24px;
+  column-rule: 1px solid var(--line);
+}
+
+/* Drop cap */
+.dropcap::first-letter {
+  font-family: var(--sans);
+  font-weight: 900;
+  font-size: 4.4em;
+  line-height: 0.85;
+  float: left;
+  padding: 6px 8px 0 0;
+  color: var(--accent, var(--pink));
+}
+
+/* Byline */
+.byline {
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.byline strong { color: var(--ink); font-weight: 800; }
+
+/* Pull quote */
+.pull-quote {
+  border-top: 2px solid var(--accent, var(--pink));
+  border-bottom: 1px solid var(--line);
+  padding: 18px 0 16px;
+  margin: 10px 0;
+}
+.pull-quote .text {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.35;
+  color: var(--ink);
+}
+.pull-quote .attr {
+  margin-top: 10px;
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+
+/* Photo frame */
+.photo {
+  position: relative;
+  background: linear-gradient(135deg, #d8dde6 0%, #b8c0cc 50%, #98a2b2 100%);
+  overflow: hidden;
+}
+.photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 30% 30%, rgba(255,255,255,0.25) 0%, transparent 50%),
+    radial-gradient(circle at 70% 70%, rgba(0,0,0,0.12) 0%, transparent 50%);
+}
+.photo .ph-label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(26,40,81,0.85);
+  color: var(--cream);
+  padding: 4px 9px;
+  font-family: var(--sans);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 2px;
+  z-index: 2;
+}
+
+.photo-caption {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  color: var(--ink-mute);
+  font-style: italic;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+/* Section opener — full-bleed colored page */
+.opener {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 80px 60px 60px;
+  color: white;
+}
+.opener .o-num {
+  font-family: var(--sans);
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  font-weight: 800;
+  opacity: 0.7;
+}
+.opener .o-title {
+  font-family: var(--sans);
+  font-weight: 800;
+  font-size: 90px;
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+}
+.opener .o-sub {
+  font-family: var(--script);
+  font-size: 48px;
+  color: var(--yellow);
+  margin-top: 6px;
+  line-height: 1;
+}
+.opener .o-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--sans);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.opener .o-list .item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 6px 0;
+  border-top: 1px solid rgba(255,255,255,0.18);
+}
+.opener .o-list .item:last-child { border-bottom: 1px solid rgba(255,255,255,0.18); }
+.opener .o-list .item .pg {
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  margin-left: auto;
+}
+
+/* Info box (callout) */
+.info-box {
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent, var(--teal));
+  padding: 14px 16px;
+  border-radius: 0 6px 6px 0;
+}
+.info-box .info-label {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--accent, var(--teal-deep));
+}
+.info-box .info-body {
+  font-family: var(--serif);
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--ink);
+  margin-top: 6px;
+}
+
+/* Poem block */
+.poem {
+  font-family: var(--serif);
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--ink);
+  white-space: pre-line;
+  font-style: italic;
+}
+.poem-title {
+  font-family: var(--sans);
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+.poem-author {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent, var(--pink));
+}
+
+/* Misc */
+.script { font-family: var(--script); font-weight: 600; line-height: 1; }
+.divider-dot { color: var(--ink-mute); margin: 0 8px; }
