@@ -1,56 +1,100 @@
 // BACK PAGES — Шах, Стручна усавршавања, Међународни дани, Занимљивости, Закључак
 
-// 24 — ШАХ У НАШОЈ ШКОЛИ (placeholder)
+// 24 — ШАХ У НАШОЈ ШКОЛИ
 function PageSah() {
+  const body = `Од почетка ове школске године у нашој школи, сваке сриједе, 6. час, одржава се шаховска секција, коју води наставник математике Борис Крчковски.
+
+Секција је, званично, почела ове школске године, након већ традиционалних турнира у шаху, на полугодишту и крају године, који се дешавају више од 10 година.
+
+Ученици су ове године учествовали на Општинском екипном такмичењу у шаху, Кадетском првенству Општине (до 18 година), Републичком кадетском првенству (до 18 година) и Међународном турниру у шаху.
+
+Међу најуспјешнијим ученицима, у шаху, су Гаврило и Михаило Тешинић, Јован Чубриловић, Марко Тешинић, Срђан Њежић и Лазар Станивуковић.
+
+Шах није само игра, већ и начин развијања логичког размишљања, стрпљења и концентрације. Управо зато шаховска секција има важну улогу у животу наше школе, а интересовање ученика показује да ће ова традиција наставити да расте и у годинама које долазе.`;
+
+  const clanovi = [
+    { r: 'I разред',    n: 'Никола Бабић' },
+    { r: 'III разред',  n: 'Дејана Вукмирица, Марко Мијаљевић, Михајло Раниловић, Гаврило Тешинић, Јован Чубриловић' },
+    { r: 'IV разред',   n: 'Александра Сантрач, Жељко Тубић' },
+    { r: 'V разред',    n: 'Јана Бера, Ивана Ђенадија, Стојан Шарац, Тамара Шормаз' },
+    { r: 'VII разред',  n: 'Анђела Слијепац' },
+    { r: 'VIII разред', n: 'Анђела Сантрач, Марко Тешинић' },
+  ];
+
   return (
     <PageShell accent="var(--navy)" section="ШАХ · АКТИВНОСТИ" page="24" side="right">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>04 · Активности</SectionMarker>
-        <div className="headline" style={{ marginTop: 14, fontSize: 64, lineHeight: 0.94 }}>
-          Шах<br/>
-          у нашој <em>школи</em>.
+        <div className="headline" style={{ marginTop: 12, fontSize: 56, lineHeight: 0.94 }}>
+          Шах у нашој <em>школи</em>.
         </div>
-        <div className="deck" style={{ marginTop: 14 }}>
-          О школској шаховској секцији, такмичењима и ученицима који мјесецима
-          стрпљиво уче најстарију игру стратегије на свијету.
+        <div className="deck" style={{ marginTop: 10 }}>
+          Секција, такмичења и ученици који стрпљиво уче
+          најстарију игру стратегије на свијету.
         </div>
 
-        <div style={{ marginTop: 30, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, alignItems: 'start' }}>
-          {/* Chessboard graphic */}
-          <div>
+        <div style={{ marginTop: 20, display: 'grid', gridTemplateColumns: '1.45fr 1fr', gap: 24, alignItems: 'start' }}>
+
+          {/* lijeva kolona — tekst */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+            <ArticleBody text={body} dropcap style={{ fontSize: '11.5px' }} />
+
+            {/* lista članova */}
             <div style={{
-              width: '100%', aspectRatio: '1',
-              display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)',
-              border: '2px solid var(--navy)',
-              maxWidth: 280,
+              borderTop: '2px solid var(--navy)',
+              paddingTop: 10,
             }}>
-              {Array.from({ length: 64 }).map((_, i) => {
-                const row = Math.floor(i / 8);
-                const col = i % 8;
-                const dark = (row + col) % 2 === 1;
-                return (
-                  <div key={i} style={{
-                    background: dark ? 'var(--navy)' : 'var(--cream)',
-                    aspectRatio: '1',
-                  }} />
-                );
-              })}
-            </div>
-            <div className="photo-caption" style={{ marginTop: 8 }}>
-              Школска шаховска секција, одјељење за чланове од 4. до 9. разреда.
+              <div style={{ fontFamily: 'var(--sans)', fontSize: 9.5, fontWeight: 800,
+                letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--navy)',
+                marginBottom: 8 }}>
+                Чланови секције
+              </div>
+              {clanovi.map((c, i) => (
+                <div key={i} style={{
+                  display: 'grid', gridTemplateColumns: '82px 1fr',
+                  gap: 10, padding: '5px 0',
+                  borderTop: '1px solid var(--line)',
+                  fontFamily: 'var(--sans)', fontSize: 10.5,
+                }}>
+                  <span style={{ fontWeight: 800, color: 'var(--navy)', whiteSpace: 'nowrap' }}>{c.r}</span>
+                  <span style={{ color: 'var(--ink-soft)', lineHeight: 1.4 }}>{c.n}</span>
+                </div>
+              ))}
             </div>
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            <PlaceholderPanel>
-              Текст о шаховској секцији наше школе биће овдје приказан када га доставите.
-              Простор је предвиђен за листу учесника, ментора, резултате са такмичења и
-              фотографије са партија.
-            </PlaceholderPanel>
-            <InfoBox label="Шаховска секција">
-              <div style={{ marginTop: 2 }}>
-                Дани сусрета: <strong>уторком и четвртком, 13.30 — 15.00</strong><br/>
-                Мјесто: учионица бр. 5, централна школа
+          {/* desna kolona — tabla + foto + info */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+            {/* šahovska tabla */}
+            <div>
+              <div style={{
+                width: '100%', aspectRatio: '1',
+                display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)',
+                border: '2px solid var(--navy)',
+              }}>
+                {Array.from({ length: 64 }).map((_, i) => {
+                  const dark = (Math.floor(i / 8) + i % 8) % 2 === 1;
+                  return <div key={i} style={{ background: dark ? 'var(--navy)' : 'var(--cream)', aspectRatio: '1' }} />;
+                })}
+              </div>
+            </div>
+
+            {/* foto placeholder sa natpisom */}
+            <div>
+              <Photo label="ТУРНИР · МЉЕЧАНИЦА" height={140} />
+              <div className="photo-caption" style={{ marginTop: 6 }}>
+                Јован Чубриловић у партији са фиде мајстором.<br/>
+                <em>Међународни турнир, Мљечаница, 25.04.2026.</em>
+              </div>
+            </div>
+
+            <InfoBox label="Водитељ секције">
+              <div style={{ fontFamily: 'var(--sans)', fontWeight: 800, color: 'var(--ink)', fontSize: 12, marginTop: 2 }}>
+                Борис Крчковски
+              </div>
+              <div style={{ marginTop: 3 }}>
+                наставник математике<br/>
+                <strong>сриједом, 6. час</strong>
               </div>
             </InfoBox>
           </div>
@@ -64,9 +108,9 @@ function PageSah() {
 function PageStrucnaUsavrsavanja() {
   const body = `Наставници наше школе активно су учествовали у процесу стручног усавршавања, посјетивши 68. Међународни сајам књига у Београду, један од најзначајнијих културних догађаја у региону. Том приликом обогаћен је библиотечки фонд школе новим насловима, чиме су створени бољи услови за рад и учење.
 
-Педагог и психолог наше школе, Божана Вукић и Младен Топић, учествовали су на стручном скупу „Снага тима у васпитно-образовном систему”. Скуп је одржан 3. априла 2026. године, у Бијељини, у организацији Друштва психолога Републике Српске.
+Педагог и психолог наше школе, Божана Вукић и Младен Топић, учествовали су на стручном скупу „Снага тима у васпитно-образовном систему". Скуп је одржан 3. априла 2026. године, у Бијељини, у организацији Друштва психолога Републике Српске.
 
-У организацији Републичког педагошког завода Републике Српске, од 3. до 5. марта 2026. године, реализована је 17. школа директора под називом „Школа у времену промјена — одговорност савременог директора”. Директор наше школе, Бојана Крњајић, је на овом скупу учествовала и остварила активно учешће у програму.
+У организацији Републичког педагошког завода Републике Српске, од 3. до 5. марта 2026. године, реализована је 17. школа директора под називом „Школа у времену промјена — одговорност савременог директора". Директор наше школе, Бојана Крњајић, је на овом скупу учествовала и остварила активно учешће у програму.
 
 Учитељице наше школе Бојана Згоњанин и Милена Мандић учествовале су на дводневном савјетовању-стручном предавању за учитеље, које је одржано у Теслићу, а организовало га је Друштво учитеља Републике Српске.
 
@@ -139,13 +183,27 @@ function PageMedjunarodniDani() {
 Обиљежавањем међународних дана наша школа настоји да код ученика развија знање, културу, одговорност и хуманост. Свака активност је прилика за учење, дружење и стицање нових искустава.`;
 
   const dates = [
-    { d: '5. окт.',  t: 'Свјетски дан учитеља',  c: 'var(--orange)' },
-    { d: '7. окт.',  t: 'Дјечија недјеља',       c: 'var(--pink)' },
-    { d: '20. нов.', t: 'Дан права дјетета',     c: 'var(--blue)' },
-    { d: '3. дец.',  t: 'Међ. дан особа са инв.', c: 'var(--teal)' },
-    { d: '21. феб.', t: 'Дан матерњег језика',   c: 'var(--purple)' },
-    { d: '22. апр.', t: 'Дан планете Земље',     c: 'var(--teal-deep)' },
+    { d: '15. септ.',  t: 'Дан српског јединства' },
+    { d: '26. септ.',  t: 'Дан европских језика' },
+    { d: 'I сед. окт.', t: 'Дјечија недјеља' },
+    { d: '4. окт.',    t: 'Дан заштите животиња' },
+    { d: '4–10. окт.', t: 'Недјеља свемира' },
+    { d: '16. окт.',   t: 'Дан здраве хране' },
+    { d: '6. нов.',    t: 'Дан рођења Вука С. Караџића' },
+    { d: '20. нов.',   t: 'Дан дјетета' },
+    { d: '21. феб.',   t: 'Дан матерњег језика' },
+    { d: 'пос. сри. феб.', t: 'Дан розих мајица' },
+    { d: '26. феб.',   t: 'Дан читања бајки' },
+    { d: '21. март',   t: 'Дан шума' },
+    { d: '22. март',   t: 'Дан вода' },
+    { d: '2. апр.',    t: 'Дан дјечије књиге' },
+    { d: '22. апр.',   t: 'Дан планете Земље' },
   ];
+
+  const colors = ['var(--orange)', 'var(--blue)', 'var(--pink)', 'var(--teal-deep)',
+    'var(--purple)', 'var(--orange-deep)', 'var(--blue-bright)', 'var(--pink)',
+    'var(--purple)', 'var(--pink-hot)', 'var(--teal)', 'var(--teal-deep)',
+    'var(--blue)', 'var(--orange)', 'var(--teal-deep)'];
 
   return (
     <PageShell accent="var(--blue-bright)" section="МЕЂУНАРОДНИ ДАНИ" page="27" side="right">
@@ -157,30 +215,30 @@ function PageMedjunarodniDani() {
         </div>
         <div className="deck" style={{ marginTop: 14 }}>
           Једна школска година испричана кроз обиљежавања међународних дана —
-          од Дјечије недјеље до Дана матерњег језика.
+          од Дана српског јединства до Дана планете Земље.
         </div>
 
-        <div style={{ marginTop: 26, display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: 26, alignItems: 'start' }}>
+        <div style={{ marginTop: 22, display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: 26, alignItems: 'start' }}>
           <ArticleBody text={body} dropcap />
 
           <div>
             <div style={{ fontFamily: 'var(--sans)', fontSize: 10, letterSpacing: '0.24em',
               fontWeight: 800, color: 'var(--blue-bright)', textTransform: 'uppercase',
-              marginBottom: 10 }}>
+              marginBottom: 6 }}>
               Календар обиљежавања
             </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
               {dates.map((d, i) => (
                 <div key={i} style={{
-                  display: 'grid', gridTemplateColumns: '64px 1fr',
-                  alignItems: 'baseline', gap: 12,
-                  padding: '10px 0', borderTop: '1px solid var(--line)',
+                  display: 'grid', gridTemplateColumns: '72px 1fr',
+                  alignItems: 'baseline', gap: 8,
+                  padding: '5px 0', borderTop: '1px solid var(--line)',
                 }}>
-                  <div style={{ fontFamily: 'var(--sans)', fontSize: 11, letterSpacing: '0.16em',
-                    fontWeight: 800, color: d.c, textTransform: 'uppercase' }}>
+                  <div style={{ fontFamily: 'var(--sans)', fontSize: 9, letterSpacing: '0.12em',
+                    fontWeight: 800, color: colors[i], textTransform: 'uppercase', lineHeight: 1.3 }}>
                     {d.d}
                   </div>
-                  <div style={{ fontFamily: 'var(--serif)', fontSize: 13, color: 'var(--ink)',
+                  <div style={{ fontFamily: 'var(--serif)', fontSize: 11, color: 'var(--ink)',
                     fontStyle: 'italic', lineHeight: 1.3 }}>
                     {d.t}
                   </div>
@@ -188,18 +246,6 @@ function PageMedjunarodniDani() {
               ))}
               <div style={{ borderTop: '1px solid var(--line)' }} />
             </div>
-          </div>
-        </div>
-
-        <div style={{
-          position: 'absolute', bottom: 78, left: 50, right: 50,
-          padding: '16px 22px', background: 'var(--cream)',
-          borderTop: '2px solid var(--blue-bright)',
-        }}>
-          <div className="byline" style={{ marginBottom: 4 }}>Истичемо</div>
-          <div style={{ fontFamily: 'var(--serif)', fontSize: 13, fontStyle: 'italic', color: 'var(--ink)' }}>
-            Међународни дан матерњег језика — рецитације, литерарни радови и језичке
-            радионице које показују љепоту и богатство ћириличког писма.
           </div>
         </div>
       </div>
@@ -276,9 +322,9 @@ function PageZakljucak() {
               <div className="byline">Имали смо част сарађивати са</div>
               <div style={{ marginTop: 8, fontFamily: 'var(--serif)', fontSize: 12.5,
                 lineHeight: 1.7, color: 'var(--ink-soft)', fontStyle: 'italic' }}>
-                Општином Козарска Дубица · СКПД „Просвјета” · Народном библиотеком ·
+                Општином Козарска Дубица · СКПД „Просвјета" · Народном библиотеком ·
                 Полицијском станицом · Центром за социјални рад · Домом културе ·
-                Удружењем младих „Фокус” · Мото клубом „Чопор” · породицом Јањош ·
+                Удружењем младих „Фокус" · Мото клубом „Чопор" · породицом Јањош ·
                 Спомен-подручјем Доња Градина · Борачком организацијом · многим другим
                 добрим људима.
               </div>
@@ -300,8 +346,8 @@ function PageZakljucak() {
                   ШКОЛСКИ ГЛАС · бр. 18
                 </div>
                 <strong style={{ opacity: 0.7 }}>Издавач</strong><br/>
-                ОШ „Никола Тесла”, Кнежица<br/>
-                Козарска Дубица<br/><br/>
+                ЈУ ОШ „МАЈКА КНЕЖОПОЉКА"<br/>
+                Кнежица<br/><br/>
 
                 <strong style={{ opacity: 0.7 }}>Директор</strong><br/>
                 Бојана Крњајић<br/><br/>

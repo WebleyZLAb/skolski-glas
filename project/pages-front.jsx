@@ -149,7 +149,7 @@ function PageEditorial() {
           </div>
           <div style={{ textAlign: 'right', fontFamily: 'var(--sans)', fontSize: 11,
             letterSpacing: '0.18em', fontWeight: 700, color: 'var(--ink-mute)', textTransform: 'uppercase' }}>
-            ОШ „Никола Тесла”<br />Кнежица · Козарска Дубица
+            ЈУ ОШ „МАЈКА КНЕЖОПОЉКА”<br />Кнежица
           </div>
         </div>
       </div>

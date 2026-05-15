@@ -5,7 +5,7 @@ function App() {
   return (
     <DesignCanvas
       title="Школски глас · Број 18"
-      subtitle="ОШ „Никола Тесла”, Кнежица · Преглед свих страна"
+      subtitle={'ЈУ ОШ „МАЈКА КНЕЖОПОЉКА", Кнежица · Преглед свих страна'}
       bg="#EDE6D8"
     >
       <DCSection id="front" title="Уводне странице" subtitle="Насловна, садржај, уводна ријеч">
@@ -20,11 +20,11 @@ function App() {
         </DCArtboard>
       </DCSection>
 
-      <DCSection id="pripremni-tesla" title={'Припремни програм · Пројекат „Тесла”'} subtitle="Поглавља 02 и 03">
+      <DCSection id="pripremni-tesla" title={'Припремни програм · Пројекат „Тесла"'} subtitle="Поглавља 02 и 03">
         <DCArtboard id="pripremni" label="05 · Припремни програм" width={W} height={H}>
           <PageWrap width={W} height={H}><PagePripremni /></PageWrap>
         </DCArtboard>
-        <DCArtboard id="projekat-tesla" label={'06 · Пројекат „Тесла”'} width={W} height={H}>
+        <DCArtboard id="projekat-tesla" label={'06 · Пројекат „Тесла"'} width={W} height={H}>
           <PageWrap width={W} height={H}><PageProjekatTesla /></PageWrap>
         </DCArtboard>
       </DCSection>
@@ -39,6 +39,9 @@ function App() {
         <DCArtboard id="saradnja-2" label="09 · Сарадња (2)" width={W} height={H}>
           <PageWrap width={W} height={H}><PageSaradnja2 /></PageWrap>
         </DCArtboard>
+        <DCArtboard id="saradnja-3" label="10 · Сарадња (3) · Тениски терен" width={W} height={H}>
+          <PageWrap width={W} height={H}><PageSaradnja3 /></PageWrap>
+        </DCArtboard>
         <DCArtboard id="priredbe-1" label="11 · Приредбе (1)" width={W} height={H}>
           <PageWrap width={W} height={H}><PagePriredbe1 /></PageWrap>
         </DCArtboard>
@@ -48,7 +51,7 @@ function App() {
         <DCArtboard id="uredjenje" label="14 · Уређење простора" width={W} height={H}>
           <PageWrap width={W} height={H}><PageUredjenje /></PageWrap>
         </DCArtboard>
-        <DCArtboard id="sport" label="16 · Спортска такмичења" width={W} height={H}>
+        <DCArtboard id="sport" label="16 · Школска такмичења" width={W} height={H}>
           <PageWrap width={W} height={H}><PageSport /></PageWrap>
         </DCArtboard>
         <DCArtboard id="konkursi" label="17 · Успјеси на конкурсима" width={W} height={H}>

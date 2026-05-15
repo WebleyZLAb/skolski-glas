@@ -70,64 +70,55 @@ function PagePripremni() {
   );
 }
 
-// 05 — ПРОЈЕКАТ „ТЕСЛА” (placeholder content)
+// 05 — ПРОЈЕКАТ „ТЕСЛА"
 function PageProjekatTesla() {
+  const body = `Пројекат „Тесла" био је једно од најљепших и најинспиративнијих искустава које смо реализовали у нашој школи током ове школске године. Кроз различите активности ученици су имали прилику да на занимљив и креативан начин упознају живот и дјело великог научника Николе Тесле, али и да покажу своја знања, таленте и машту.
+
+Посебно ми је драго што су ученици са великим ентузијазмом прихватили све задатке и активно учествовали у радионицама, изради паноа, презентација, ликовних и литерарних радова, као и у музичким и сценским активностима. Атмосфера током рада била је испуњена сарадњом, дружењем и жељом да свако да свој допринос пројекту.
+
+Кроз овај пројекат ученици нису само учили о науци и Теслиним открићима, већ су развијали тимски дух, комуникацију, креативност и самопоуздање. Управо то и јесте највећа вриједност оваквих активности — знање које остаје повезано са лијепим успоменама и заједничким радом.
+
+Поносан сам на све ученике који су учествовали у пројекту и вјерујем да смо заједно показали колико школа може бити мјесто стваралаштва, инспирације и лијепе енергије.`;
+
   return (
-    <PageShell accent="var(--blue)" section={'ПРОЈЕКАТ „ТЕСЛА”'} page="06" side="left">
+    <PageShell accent="var(--blue)" section={'ПРОЈЕКАТ „ТЕСЛА"'} page="06" side="left">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>03 · Пројекат школе</SectionMarker>
-        <div className="headline" style={{ marginTop: 14, fontSize: 70, lineHeight: 0.94 }}>
-          Пројекат<br/>
-          <em style={{ fontFamily: 'var(--script)', fontWeight: 700, fontSize: 90,
-            color: 'var(--blue)', display: 'inline-block', marginTop: 4 }}>„Тесла”</em>
+        <div className="headline" style={{ marginTop: 12, fontSize: 56, lineHeight: 1 }}>
+          Пројекат{' '}
+          <em style={{ fontFamily: 'var(--script)', fontWeight: 700, fontSize: 74,
+            color: 'var(--blue)' }}>„Тесла"</em>
         </div>
-        <div className="deck" style={{ marginTop: 14 }}>
+        <div className="deck" style={{ marginTop: 12 }}>
           Школски пројекат посвећен лику и дјелу нашег патрона —
           једном од највећих умова свога времена.
         </div>
 
-        {/* big T mark watermark */}
-        <svg width="320" height="380" viewBox="0 0 24 24"
-          style={{ position: 'absolute', top: 220, right: -40, opacity: 0.05 }}>
+        {/* watermark T */}
+        <svg width="280" height="340" viewBox="0 0 24 24"
+          style={{ position: 'absolute', top: 180, right: -30, opacity: 0.04, pointerEvents: 'none' }}>
           <path d="M 5 4 L 19 4 L 16 7 L 13 7 L 13 20 L 11 20 L 11 7 L 8 7 Z" fill="var(--blue)" />
         </svg>
 
-        <div style={{ marginTop: 30, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
-          <Photo label="ПРОЈЕКАТ · ТЕСЛА" height={260}
-            caption={'Изложба ученичких радова у оквиру пројекта „Тесла”.'} />
-
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            <PlaceholderPanel>
-              Текст о пројекту „Тесла” биће овдје приказан када га доставите. Простор је
-              предвиђен за опис активности, циљева пројекта, учесника и постигнутих резултата
-              током школске 2025/26. године.
-            </PlaceholderPanel>
-            <InfoBox label="Покровитељ">
-              <div style={{ fontFamily: 'var(--sans)', fontWeight: 800, fontSize: 13, color: 'var(--ink)' }}>
-                Општина Козарска Дубица
-              </div>
-              <div style={{ marginTop: 4 }}>
-                Реализација у школској <strong>2025/26.</strong> години.
-              </div>
-            </InfoBox>
-          </div>
+        <div style={{ marginTop: 20 }}>
+          <ArticleBody text={body} dropcap columns={2} />
         </div>
 
-        {/* Tesla quote */}
+        {/* Tesla quote bar */}
         <div style={{
           position: 'absolute', bottom: 80, left: 50, right: 50,
-          padding: '22px 26px',
+          padding: '18px 22px',
           background: 'var(--navy)', color: 'var(--cream)',
           borderRadius: 4,
         }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'auto 1fr', gap: 22, alignItems: 'center' }}>
-            <div style={{ fontFamily: 'var(--serif)', fontSize: 96, lineHeight: 0.6,
+          <div style={{ display: 'grid', gridTemplateColumns: 'auto 1fr', gap: 18, alignItems: 'center' }}>
+            <div style={{ fontFamily: 'var(--serif)', fontSize: 80, lineHeight: 0.6,
               color: 'var(--yellow)' }}>„</div>
             <div>
-              <div className="script" style={{ fontSize: 28, lineHeight: 1.15 }}>
+              <div className="script" style={{ fontSize: 24, lineHeight: 1.15 }}>
                 Садашњост је њихова — будућност, за коју сам заиста радио, моја је.
               </div>
-              <div style={{ marginTop: 8, fontFamily: 'var(--sans)', fontSize: 10,
+              <div style={{ marginTop: 6, fontFamily: 'var(--sans)', fontSize: 10,
                 letterSpacing: '0.22em', fontWeight: 700, color: 'var(--yellow)',
                 textTransform: 'uppercase' }}>
                 — Никола Тесла
