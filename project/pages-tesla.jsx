@@ -116,7 +116,7 @@ function PageProjekatTesla() {
 
           <div style={{ marginTop: 26, display: 'flex', justifyContent: 'center' }}>
             <div style={{ width: 240 }}>
-              <Photo src="assets/tesla.jpg" height={180} />
+              <Photo src="assets/Tesla.JPG" height={180} />
             </div>
           </div>
         </div>
