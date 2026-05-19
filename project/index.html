@@ -1,9 +1,117 @@
 <!doctype html>
-<html>
+<html lang="sr">
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="refresh" content="0; url=print.html" />
   <title>Школски глас · Број 18</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800;900&family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #555; font-family: 'Manrope', system-ui, sans-serif; }
+    #pages { padding: 24px 0; }
+    .print-page {
+      position: relative;
+      width: 720px;
+      height: 1080px;
+      margin: 0 auto 24px;
+      overflow: hidden;
+      box-shadow: 0 4px 32px rgba(0,0,0,.35);
+    }
+    .page-inner {
+      width: 720px;
+      height: 1080px;
+      position: relative;
+    }
+    @media print {
+      html, body { background: white; }
+      #pages { padding: 0; }
+      .print-page {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        overflow: hidden;
+        box-shadow: none;
+        page-break-after: always;
+        break-after: page;
+      }
+      .print-page:last-child {
+        page-break-after: avoid;
+        break-after: avoid;
+      }
+      .page-inner {
+        position: absolute;
+        width: 720px;
+        height: 1080px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-360px) scale(1.0394);
+        transform-origin: top left;
+      }
+    }
+    @page { size: A4 portrait; margin: 0; }
+  </style>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin></script>
 </head>
-<body></body>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel" src="decorations.jsx"></script>
+  <script type="text/babel" src="mag-shell.jsx"></script>
+  <script type="text/babel" src="pages-front.jsx"></script>
+  <script type="text/babel" src="pages-tesla.jsx"></script>
+  <script type="text/babel" src="pages-aktivnosti-1.jsx"></script>
+  <script type="text/babel" src="pages-aktivnosti-2.jsx"></script>
+  <script type="text/babel" src="pages-pesme.jsx"></script>
+  <script type="text/babel" src="pages-back.jsx"></script>
+
+  <script type="text/babel">
+    const PAGE_ORDER = [
+      PageCover,
+      PageTOC,
+      PageEditorial,
+      PagePripremni,
+      PageProjekatTesla,
+      PageAktivnostiOpener,
+      PageSaradnja1,
+      PageSaradnja2,
+      PageSaradnja3,
+      PagePriredbe1,
+      PagePriredbe2,
+      PageUredjenje,
+      PageSport,
+      PageKonkursi,
+      PageLiterarnIntro,
+      PagePoemsNikolina1,
+      PagePoemsNikolina2,
+      PagePoemsOci,
+      PageSah,
+      PageStrucnaUsavrsavanja,
+      PageMedjunarodniDani,
+      PageZanimljivosti,
+      PageZanimljivosti2,
+      PageZakljucak,
+    ];
+
+    function PrintApp() {
+      return (
+        <div id="pages">
+          {PAGE_ORDER.map((Page, i) => (
+            <div key={i} className="print-page">
+              <div className="page-inner">
+                <Page />
+              </div>
+            </div>
+          ))}
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<PrintApp />);
+  </script>
+</body>
 </html>
