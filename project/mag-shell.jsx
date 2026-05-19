@@ -82,16 +82,18 @@ function ArticleBody({ text, dropcap = false, columns = 1, style = {} }) {
 
 }
 
-// Photo placeholder
-function Photo({ label, caption, height = 200, style = {} }) {
+// Photo — shows real image when src provided, placeholder otherwise
+function Photo({ src, label, caption, height = 200, style = {} }) {
   return (
     <div>
-      <div className="photo" style={{ height, borderRadius: 3, ...style }}>
-        {label && <div className="ph-label">{label}</div>}
-      </div>
+      {src
+        ? <img src={src} alt={label || ''} style={{ width: '100%', height, objectFit: 'cover', display: 'block', borderRadius: 3, ...style }} />
+        : <div className="photo" style={{ height, borderRadius: 3, ...style }}>
+            {label && <div className="ph-label">{label}</div>}
+          </div>
+      }
       {caption && <div className="photo-caption">{caption}</div>}
     </div>);
-
 }
 
 // Pull quote
