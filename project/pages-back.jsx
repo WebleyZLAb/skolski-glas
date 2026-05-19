@@ -22,7 +22,7 @@ function PageSah() {
   ];
 
   return (
-    <PageShell accent="var(--navy)" section="ШАХ · АКТИВНОСТИ" page="24" side="right">
+    <PageShell accent="var(--navy)" section="ШАХ · АКТИВНОСТИ" page="20" side="right">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>04 · Активности</SectionMarker>
         <div className="headline" style={{ marginTop: 12, fontSize: 56, lineHeight: 0.94 }}>
@@ -81,11 +81,8 @@ function PageSah() {
 
             {/* foto placeholder sa natpisom */}
             <div>
-              <Photo label="ТУРНИР · МЉЕЧАНИЦА" height={140} />
-              <div className="photo-caption" style={{ marginTop: 6 }}>
-                Јован Чубриловић у партији са фиде мајстором.<br/>
-                <em>Међународни турнир, Мљечаница, 25.04.2026.</em>
-              </div>
+              <Photo src="assets/sah.png" label="ТУРНИР · МЉЕЧАНИЦА" height={140}
+                caption="Међународни турнир, Мљечаница." />
             </div>
 
             <InfoBox label="Водитељ секције">
@@ -117,7 +114,7 @@ function PageStrucnaUsavrsavanja() {
 Важно је споменути и процес вредновања квалитета васпитно-образовног рада школе, који смо ове школске године успјешно завршили. Процес вредновања извршили су представници РПЗ-а, просвјетни инспектори-савјетници Дајана Латиновић Петровић и Бојана Сучевић.`;
 
   return (
-    <PageShell accent="var(--purple)" section="СТРУЧНА УСАВРШАВАЊА" page="25" side="left">
+    <PageShell accent="var(--purple)" section="СТРУЧНА УСАВРШАВАЊА" page="21" side="left">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>05 · Радници школе</SectionMarker>
         <div className="headline" style={{ marginTop: 14, fontSize: 54, lineHeight: 0.94 }}>
@@ -134,7 +131,7 @@ function PageStrucnaUsavrsavanja() {
           <ArticleBody text={body} dropcap />
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
-            <Photo label="САЈАМ КЊИГА · БЕОГРАД" height={200}
+            <Photo src="assets/sajam.jpg" label="САЈАМ КЊИГА · БЕОГРАД" height={200}
               caption="Наставници на 68. Међународном сајму књига." />
 
             <div style={{ background: 'var(--cream)', padding: '14px 16px',
@@ -206,7 +203,7 @@ function PageMedjunarodniDani() {
     'var(--blue)', 'var(--orange)', 'var(--teal-deep)'];
 
   return (
-    <PageShell accent="var(--blue-bright)" section="МЕЂУНАРОДНИ ДАНИ" page="27" side="right">
+    <PageShell accent="var(--blue-bright)" section="МЕЂУНАРОДНИ ДАНИ" page="22" side="right">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>06 · Обиљежавања</SectionMarker>
         <div className="headline" style={{ marginTop: 14, fontSize: 50, lineHeight: 0.95 }}>
@@ -288,7 +285,7 @@ function PageZanimljivosti() {
   ];
 
   return (
-    <PageShell accent="var(--orange-deep)" section="ВЕСЕЛА СТРАНИЦА" page="28" side="left">
+    <PageShell accent="var(--orange-deep)" section="ВЕСЕЛА СТРАНИЦА" page="23" side="left">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>07 · За крај</SectionMarker>
         <div className="headline" style={{ marginTop: 14, fontSize: 64, lineHeight: 0.94 }}>
@@ -350,13 +347,13 @@ function PageZanimljivosti2() {
   ];
 
   return (
-    <PageShell accent="var(--teal)" section="ЗАНИМЉИВОСТИ" page="29" side="right">
+    <PageShell accent="var(--teal)" section="ЗАНИМЉИВОСТИ" page="24" side="right">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>07 · За крај</SectionMarker>
         <div className="headline" style={{ marginTop: 14, fontSize: 64, lineHeight: 0.94 }}>
-          Да ли си<br/>
+          Да ли сте<br/>
           <em style={{ fontFamily: 'var(--script)', fontSize: 72, fontWeight: 700,
-            color: 'var(--teal)' }}>знао</em>?
+            color: 'var(--teal)' }}>знали</em>?
         </div>
         <div className="deck" style={{ marginTop: 14 }}>
           Четрнаест занимљивости о свијету у коме живимо — нека те изненаде.
@@ -385,7 +382,7 @@ function PageZanimljivosti2() {
 // 30 — ЗАКЉУЧАК
 function PageZakljucak() {
   return (
-    <PageShell accent="var(--navy)" section="ЗАКЉУЧАК" page="30" side="right" bg="mag-page--cream">
+    <PageShell accent="var(--navy)" section="ЗАКЉУЧАК" page="25" side="right" bg="mag-page--cream">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>08 · За крај</SectionMarker>
         <div className="headline" style={{ marginTop: 14, fontSize: 70, lineHeight: 0.94 }}>

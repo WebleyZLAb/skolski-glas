@@ -17,27 +17,27 @@ function PageTOC() {
   { num: '02', t: 'Припремни програм и упис ученика', acc: 'var(--teal)', page: '04' },
   { num: '03', t: 'Пројекат „Тесла”', acc: 'var(--blue)', page: '05' },
   { num: '04', t: 'Активности', acc: 'var(--orange)', page: '06', italic: true, items: [
-    { t: 'Сарадња са локалном заједницом', p: '08' },
-    { t: 'Приредбе и манифестације', p: '11' },
-    { t: 'Уређење школског простора', p: '14' },
-    { t: 'Такмичења и награде', p: '16' },
-    { t: 'Ликовни и литерарни радови', p: '19' },
-    { t: 'Шах у нашој школи', p: '24' }]
+    { t: 'Сарадња са локалном заједницом', p: '07' },
+    { t: 'Приредбе и манифестације', p: '10' },
+    { t: 'Уређење школског простора', p: '12' },
+    { t: 'Такмичења и награде', p: '13' },
+    { t: 'Ликовни и литерарни радови', p: '15' },
+    { t: 'Шах у нашој школи', p: '20' }]
   },
-  { num: '05', t: 'Стручна усавршавања и посјета РПЗ-а', acc: 'var(--purple)', page: '25' },
-  { num: '06', t: 'Обиљежавање међународних дана', acc: 'var(--blue-bright)', page: '27' },
-  { num: '07', t: 'Занимљивости и весела страна', acc: 'var(--orange-deep)', page: '28' },
-  { num: '08', t: 'Закључак', acc: 'var(--navy)', page: '30' }];
+  { num: '05', t: 'Стручна усавршавања и посјета РПЗ-а', acc: 'var(--purple)', page: '21' },
+  { num: '06', t: 'Обиљежавање међународних дана', acc: 'var(--blue-bright)', page: '22' },
+  { num: '07', t: 'Занимљивости и весела страна', acc: 'var(--orange-deep)', page: '23' },
+  { num: '08', t: 'Закључак', acc: 'var(--navy)', page: '25' }];
 
 
   return (
-    <PageShell accent="var(--pink)" section="САДРЖАЈ" page="03" side="right">
+    <PageShell accent="var(--pink)" section="САДРЖАЈ" page="02" side="right">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>Број 18 · мај 2026.</SectionMarker>
         <div className="headline headline-xl" style={{ marginTop: 14, fontSize: 88, lineHeight: 0.92 }}>
           Шта<br />читамо <em style={{ fontFamily: 'var(--script)', fontWeight: 700, fontSize: 86 }}>унутра?</em>
         </div>
-        <div className="deck" style={{ marginTop: 14, maxWidth: 540 }}>Школска2025/26. година — у причама, такмичењима, приредбама, пјесмама и сјећањима која остају у нашим ходницима.
+        <div className="deck" style={{ marginTop: 14, maxWidth: 540 }}>Школска 2025/26. година — у причама, такмичењима, приредбама, пјесмама и сјећањима која остају у нашим ходницима.
 
 
         </div>
@@ -108,7 +108,7 @@ function PageEditorial() {
 Надамо се да ћете, читајући ове странице, осјетити дух наше школе и понос који сви заједно градимо.`;
 
   return (
-    <PageShell accent="var(--pink)" section="УВОДНА РИЈЕЧ" page="04" side="left">
+    <PageShell accent="var(--pink)" section="УВОДНА РИЈЕЧ" page="03" side="left">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>Уводник</SectionMarker>
         <div className="headline headline-xl" style={{ marginTop: 16, fontSize: 64 }}>
@@ -124,7 +124,7 @@ function PageEditorial() {
           <ArticleBody text={intro} dropcap columns={1} />
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
-            <Photo label="ШКОЛА · 2025/26." height={240}
+            <Photo src="assets/skola.jpg" label="ШКОЛА · 2025/26." height={165}
             caption="Централна школа у Кнежици, прољеће 2026." />
             <PullQuote
               text="Школа није само мјесто учења, већ и мјесто одрастања, стварања пријатељстава и успомена."

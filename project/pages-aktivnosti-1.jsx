@@ -3,13 +3,13 @@
 // 06 — АКТИВНОСТИ · SECTION OPENER (editorial, narandžasta samo kao akcent)
 function PageAktivnostiOpener() {
   const items = [
-    { title: 'Сарадња са локалном заједницом',  page: '08' },
-    { title: 'Приредбе и манифестације',        page: '11' },
-    { title: 'Уређење школског простора',       page: '14' },
-    { title: 'Школска такмичења',               page: '16' },
-    { title: 'Успјеси на конкурсима',           page: '17' },
-    { title: 'Ликовни и литерарни радови',      page: '19' },
-    { title: 'Шах у нашој школи',               page: '24' },
+    { title: 'Сарадња са локалном заједницом',  page: '07' },
+    { title: 'Приредбе и манифестације',        page: '10' },
+    { title: 'Уређење школског простора',       page: '12' },
+    { title: 'Школска такмичења',               page: '13' },
+    { title: 'Успјеси на конкурсима',           page: '14' },
+    { title: 'Ликовни и литерарни радови',      page: '15' },
+    { title: 'Шах у нашој школи',               page: '20' },
   ];
 
   return (
@@ -110,7 +110,7 @@ function PageAktivnostiOpener() {
       </div>
 
       <div className="folio">
-        <span className="num">07</span>
+        <span className="num">06</span>
         <span>АКТИВНОСТИ · ПОГЛАВЉЕ 04</span>
       </div>
     </div>
@@ -130,7 +130,7 @@ function PageSaradnja1() {
 Нашој установи додијељена је Плакета општине Козарска Дубица, поводом обиљежавања Дана општине — 27. априла.`;
 
   return (
-    <PageShell accent="var(--orange)" section="САРАДЊА · АКТИВНОСТИ" page="08" side="left">
+    <PageShell accent="var(--orange)" section="САРАДЊА · АКТИВНОСТИ" page="07" side="left">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>04 · Активности</SectionMarker>
         <div className="headline" style={{ marginTop: 14, fontSize: 56, lineHeight: 0.94 }}>
@@ -147,7 +147,7 @@ function PageSaradnja1() {
           <ArticleBody text={part1} dropcap />
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
-            <Photo label="ОПШТИНА · 27. АПРИЛ" height={210}
+            <Photo src="assets/plaketa.jpg" label="ОПШТИНА · 27. АПРИЛ" height={222}
               caption="Додјела Плакете општине Козарска Дубица нашој установи." />
             <InfoBox label="Партнери ове године">
               <div style={{ fontFamily: 'var(--sans)', fontWeight: 700, fontSize: 11.5,
@@ -189,7 +189,7 @@ function PageSaradnja2() {
 Све реализоване посјете показују да учење не мора бити ограничено учионицом.`;
 
   return (
-    <PageShell accent="var(--orange)" section="САРАДЊА · НАСТАВАК" page="09" side="right">
+    <PageShell accent="var(--orange)" section="САРАДЊА · НАСТАВАК" page="08" side="right">
       <div style={{ padding: '90px 50px 60px' }}>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 26, alignItems: 'start' }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
@@ -200,12 +200,12 @@ function PageSaradnja2() {
             <PullQuote
               text="Кроз сарадњу са институцијама ученици стичу практична знања, развијају критичко мишљење и граде важне животне вјештине."
             />
-            <Photo label="ФОТОГРАФИЈА 1" height={130}
-              caption="Активности у оквиру сарадње са локалном заједницом." />
-            <Photo label="ФОТОГРАФИЈА 2" height={130}
-              caption="Активности у оквиру сарадње са локалном заједницом." />
-            <Photo label="ФОТОГРАФИЈА 3" height={130}
-              caption="Активности у оквиру сарадње са локалном заједницом." />
+            <Photo src="assets/posjeta.jpg" height={130}
+              caption="Посјета нашој школи." />
+            <Photo src="assets/bezbjednost-saobracaj.jpg" height={130}
+              caption="Предавање о безбједности у саобраћају." />
+            <Photo src="assets/uros-petrovic.jpg" height={130}
+              caption="Писац Урош Петровић." />
           </div>
 
           <ArticleBody text={part2} style={{ fontSize: 11.5, lineHeight: 1.55 }} />
@@ -226,7 +226,7 @@ function PagePriredbe1() {
 Посебну топлину донијеле су приредбе поводом 8. марта, када су најмлађи ученици својим мамама, бакама и учитељицама поклонили искрене емоције кроз пјесму, плес и рецитације.`;
 
   return (
-    <PageShell accent="var(--pink)" section="ПРИРЕДБЕ · АКТИВНОСТИ" page="11" side="left">
+    <PageShell accent="var(--pink)" section="ПРИРЕДБЕ · АКТИВНОСТИ" page="10" side="left">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>04 · Активности</SectionMarker>
         <div className="headline" style={{ marginTop: 14, fontSize: 56, lineHeight: 0.94 }}>
@@ -243,9 +243,9 @@ function PagePriredbe1() {
           <ArticleBody text={body} dropcap />
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
-            <Photo label="СВЕТИ САВА · ШКОЛСКА СЛАВА" height={210}
+            <Photo src="assets/sveti-sava.jpg" label="СВЕТИ САВА · ШКОЛСКА СЛАВА" height={210}
               caption="Свечани програм поводом обиљежавања школске славе." />
-            <Photo label="8. МАРТ" height={160}
+            <Photo src="assets/8-mart.jpg" label="8. МАРТ" height={160}
               caption="Приредба најмлађих ученика поводом Дана жена." />
           </div>
         </div>
@@ -272,7 +272,7 @@ function PagePriredbe2() {
 Све ове активности показују да школа није само мјесто учења, већ и простор гдје се развијају таленти, његује култура, граде пријатељства и стварају незаборавне успомене.`;
 
   return (
-    <PageShell accent="var(--pink)" section="ПРИРЕДБЕ · НАСТАВАК" page="12" side="right">
+    <PageShell accent="var(--pink)" section="ПРИРЕДБЕ · НАСТАВАК" page="11" side="right">
       <div style={{ padding: '90px 50px 60px' }}>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 26, alignItems: 'start' }}>
           <div>
@@ -280,8 +280,8 @@ function PagePriredbe2() {
             <div className="headline" style={{ marginTop: 12, fontSize: 30, lineHeight: 1.05 }}>
               Гдје се његују<br/>традиција и <em>заједништво</em>.
             </div>
-            <Photo label="У СУСРЕТ ВАСКРСУ" height={170} style={{ marginTop: 18 }}
-              caption="Традиционално украшавање васкршњих јаја." />
+            <Photo src="assets/manifestacija-u-susret-vaskrsu.jpg" label="У СУСРЕТ ВАСКРСУ" height={170} style={{ marginTop: 18 }}
+              caption={'Манифестација „У сусрет Васкрсу".'} />
             <PullQuote
               text="Приредбе и манифестације остају трајан подсјетник на љепоту школског живота и значај заједништва у одрастању сваког ученика."
             />
@@ -294,14 +294,14 @@ function PagePriredbe2() {
           position: 'absolute', bottom: 78, left: 50, right: 50,
           display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10,
         }}>
-          <Photo label="ФОТОГРАФИЈА 3" height={110}
-            caption="Приредба ученика наше школе." />
-          <Photo label="ФОТОГРАФИЈА 4" height={110}
-            caption="Приредба ученика наше школе." />
-          <Photo label="ФОТОГРАФИЈА 5" height={110}
-            caption="Приредба ученика наше школе." />
-          <Photo label="ФОТОГРАФИЈА 6" height={110}
-            caption="Приредба ученика наше школе." />
+          <Photo src="assets/djecija-nova-godina.jpg" height={110}
+            caption="Свечаност поводом Дјечије Нове године." />
+          <Photo src="assets/priredba-nikoljdan.jpg" height={110}
+            caption="Приредба поводом Светог Николе." />
+          <Photo src="assets/svetosavska-liturgija.jpg" height={110}
+            caption="Светосавска литургија." />
+          <Photo src="assets/dan-osoba-sa-invaliditetom.jpg" height={110}
+            caption="Обиљежавање Дана особа са инвалидитетом." />
         </div>
       </div>
     </PageShell>
@@ -317,7 +317,7 @@ function PageSaradnja3() {
 Уређен тениски терен отвара нове могућности за физичко васпитање и слободне активности ученика, а истовремено је лијеп примјер како заједничким ангажовањем локалне заједнице, спортских организација и школе можемо створити боље услове за дјецу.`;
 
   return (
-    <PageShell accent="var(--orange)" section="САРАДЊА · НАСТАВАК" page="10" side="left">
+    <PageShell accent="var(--orange)" section="САРАДЊА · НАСТАВАК" page="09" side="left">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>наставак</SectionMarker>
         <div className="headline" style={{ marginTop: 12, fontSize: 42, lineHeight: 0.96 }}>
@@ -353,10 +353,8 @@ function PageSaradnja3() {
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
-            <Photo label="ТЕНИСКИ ТЕРЕН · КНЕЖИЦА" height={220}
-              caption="Уређени тениски терен школе у Кнежици, прољеће 2026." />
-            <Photo label="УРЕЂЕЊЕ ТЕРЕНА" height={200}
-              caption="Ученици и учитељ Бојан током уређења тениског терена." />
+            <Photo src="assets/tenis.jpg" label="ТЕНИСКИ ТЕРЕН · КНЕЖИЦА" height={220}
+              caption="Уређивање тениског терена у Кнежици." />
           </div>
         </div>
       </div>

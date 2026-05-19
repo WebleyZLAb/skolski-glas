@@ -11,7 +11,7 @@ function PagePripremni() {
 Паралелно са реализацијом наведеног програма, школска комисија за тестирање зрелости дјеце за полазак у школу тестирала је зрелост 13 дјеце, у периоду од 27. априла до 1. маја 2026. године, док је једном дјетету тестирање одгођено због тренутног одсуства. Од дјеце предвиђене за тестирање ове године, 7 припада уписном подручју централне школе у Кнежици и 7 уписном подручју подручне школе у Међувођу.`;
 
   return (
-    <PageShell accent="var(--teal)" section="ПРИПРЕМНИ ПРОГРАМ" page="05" side="right">
+    <PageShell accent="var(--teal)" section="ПРИПРЕМНИ ПРОГРАМ" page="04" side="right">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>02 · Припрема за школу</SectionMarker>
         <div className="headline headline-lg" style={{ marginTop: 14, fontSize: 56 }}>
@@ -27,7 +27,7 @@ function PagePripremni() {
         <div style={{ marginTop: 26, display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 0,
           borderTop: '2px solid var(--teal)', borderBottom: '1px solid var(--line)' }}>
           {[
-            { n: '15.', l: 'година заредом' },
+            { n: '15', l: 'година заредом' },
             { n: '12', l: 'полазника' },
             { n: '13', l: 'тестираних' },
             { n: '2', l: 'школска подручја' },
@@ -53,7 +53,7 @@ function PagePripremni() {
           <ArticleBody text={body} dropcap columns={1} style={{ '--accent': 'var(--teal-deep)' }} />
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            <Photo label="ПРИПРЕМНИ ПРОГРАМ" height={210}
+            <Photo src="assets/pripremni-program.jpg" label="ПРИПРЕМНИ ПРОГРАМ" height={185}
               caption="Радионица у припремној групи, март 2026." />
             <InfoBox label="Водитељ програма">
               <div style={{ fontFamily: 'var(--sans)', fontWeight: 800, color: 'var(--ink)', fontSize: 13, marginTop: 2 }}>
@@ -81,7 +81,7 @@ function PageProjekatTesla() {
 Поносан сам на све ученике који су учествовали у пројекту и вјерујем да смо заједно показали колико школа може бити мјесто стваралаштва, инспирације и лијепе енергије.`;
 
   return (
-    <PageShell accent="var(--blue)" section={'ПРОЈЕКАТ „ТЕСЛА"'} page="06" side="left">
+    <PageShell accent="var(--blue)" section={'ПРОЈЕКАТ „ТЕСЛА"'} page="05" side="left">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>03 · Пројекат школе</SectionMarker>
         <div className="headline" style={{ marginTop: 12, fontSize: 56, lineHeight: 1 }}>
@@ -102,6 +102,23 @@ function PageProjekatTesla() {
 
         <div style={{ marginTop: 20 }}>
           <ArticleBody text={body} dropcap columns={2} />
+
+          <div style={{ marginTop: 14, borderTop: '1px solid var(--line)', paddingTop: 10,
+            display: 'flex', alignItems: 'baseline', gap: 10 }}>
+            <div className="script" style={{ fontSize: 22, color: 'var(--blue)', lineHeight: 1 }}>
+              Никица Вујиновић
+            </div>
+            <div style={{ fontFamily: 'var(--sans)', fontSize: 10, letterSpacing: '0.16em',
+              fontWeight: 700, color: 'var(--ink-mute)', textTransform: 'uppercase' }}>
+              наставник музичке културе
+            </div>
+          </div>
+
+          <div style={{ marginTop: 26, display: 'flex', justifyContent: 'center' }}>
+            <div style={{ width: 240 }}>
+              <Photo src="assets/tesla.jpg" height={180} />
+            </div>
+          </div>
         </div>
 
         {/* Tesla quote bar */}

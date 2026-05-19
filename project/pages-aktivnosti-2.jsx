@@ -11,7 +11,7 @@ function PageUredjenje() {
 Кроз читаву школску годину, ученички радови, цртежи, литерарни и ликовни радови красили су учионице и школске ходнике, дајући простору посебну топлину и аутентичност. Заједничким ангажовањем ученика и наставника развијен је осјећај одговорности према школском окружењу и свијест о значају очувања простора у којем учимо и растемо.`;
 
   return (
-    <PageShell accent="var(--teal)" section="УРЕЂЕЊЕ · АКТИВНОСТИ" page="14" side="left">
+    <PageShell accent="var(--teal)" section="УРЕЂЕЊЕ · АКТИВНОСТИ" page="12" side="left">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>04 · Активности</SectionMarker>
         <div className="headline" style={{ marginTop: 12, fontSize: 44, lineHeight: 0.96 }}>
@@ -25,10 +25,10 @@ function PageUredjenje() {
         </div>
 
         <div style={{ marginTop: 18, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, alignItems: 'start' }}>
-          <Photo label="ПРИЈЕ · ПАРК ШКОЛЕ" height={140}
-            caption="Школско двориште прије акције сађења, март 2026." />
-          <Photo label="ПОСЛИЈЕ · 9. АПРИЛ" height={140}
-            caption="Двориште након посађених украсних садница." />
+          <Photo src="assets/uredjenje-parka.jpg" height={140}
+            caption="Уређење парка централне школе у Кнежици." />
+          <Photo src="assets/djeca-sade.jpg" height={140}
+            caption="Ученици и наставници сађе украсне саднице, 9. априла 2026." />
         </div>
 
         <div style={{ marginTop: 18, display: 'grid', gridTemplateColumns: '1.4fr 1fr', gap: 22 }}>
@@ -97,7 +97,7 @@ function PageSport() {
   ];
 
   return (
-    <PageShell accent="var(--blue)" section="ТАКМИЧЕЊА · АКТИВНОСТИ" page="16" side="right">
+    <PageShell accent="var(--blue)" section="ТАКМИЧЕЊА · АКТИВНОСТИ" page="13" side="right">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>04 · Активности · такмичења</SectionMarker>
         <div className="headline" style={{ marginTop: 10, fontSize: 50, lineHeight: 0.94 }}>
@@ -162,7 +162,7 @@ function PageKonkursi() {
   ];
 
   return (
-    <PageShell accent="var(--purple)" section="КОНКУРСИ · АКТИВНОСТИ" page="17" side="left">
+    <PageShell accent="var(--purple)" section="КОНКУРСИ · АКТИВНОСТИ" page="14" side="left">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>04 · Активности · конкурси</SectionMarker>
         <div className="headline" style={{ marginTop: 12, fontSize: 46, lineHeight: 0.96 }}>
@@ -197,7 +197,7 @@ function PageKonkursi() {
                   <div>
                     <div style={{ fontFamily: 'var(--sans)', fontSize: 10.5, fontWeight: 800, color: 'var(--ink)',
                       lineHeight: 1.2 }}>
-                      {a.ucenik} <span style={{ color: 'var(--ink-mute)', fontWeight: 600 }}>· {a.razred}</span>
+                      {a.ucenik}
                     </div>
                     <div style={{ fontFamily: 'var(--serif)', fontSize: 9.5, fontStyle: 'italic',
                       color: 'var(--ink-soft)', marginTop: 1 }}>
@@ -231,7 +231,7 @@ function PageLiterarnIntro() {
 Поносни смо што у нашој школи имамо овакве ученике, јер управо они чине да школа буде мјесто гдје се таленти откривају и развијају. Са нестрпљењем очекујемо њене нове пјесме и сигурни смо да је ово тек почетак једне лијепе приче.`;
 
   return (
-    <PageShell accent="var(--pink-hot)" section="ЛИКОВНИ И ЛИТЕРАРНИ РАДОВИ" page="19" side="right">
+    <PageShell accent="var(--pink-hot)" section="ЛИКОВНИ И ЛИТЕРАРНИ РАДОВИ" page="15" side="right">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>04 · Активности</SectionMarker>
         <div className="headline" style={{ marginTop: 12, fontSize: 50, lineHeight: 0.96 }}>
@@ -256,7 +256,7 @@ function PageLiterarnIntro() {
               </div>
               <div style={{ fontFamily: 'var(--serif)', fontSize: 11, color: 'var(--ink-soft)',
                 fontStyle: 'italic', marginTop: 2 }}>
-                професорка српског језика
+                библиотекар
               </div>
             </div>
           </div>

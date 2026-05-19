@@ -28,8 +28,8 @@
       html, body { background: white; }
       #pages { padding: 0; }
       .print-page {
-        width: 210mm;
-        height: 297mm;
+        width: 720px;
+        height: 1080px;
         margin: 0;
         overflow: hidden;
         box-shadow: none;
@@ -45,12 +45,10 @@
         width: 720px;
         height: 1080px;
         top: 0;
-        left: 50%;
-        transform: translateX(-360px) scale(1.0394);
-        transform-origin: top left;
+        left: 0;
       }
     }
-    @page { size: A4 portrait; margin: 0; }
+    @page { size: 190.5mm 285.75mm; margin: 0; }
   </style>
 
   <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin></script>
@@ -89,6 +87,7 @@
       PagePoemsNikolina1,
       PagePoemsNikolina2,
       PagePoemsOci,
+      PageLikovniRadovi,
       PageSah,
       PageStrucnaUsavrsavanja,
       PageMedjunarodniDani,

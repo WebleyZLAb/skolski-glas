@@ -59,7 +59,7 @@ function PagePoemsNikolina1() {
 И молим се Богу за њихову небеску срећу.`;
 
   return (
-    <PageShell accent="var(--pink-hot)" section="ПЈЕСМЕ · НИКОЛИНА ТУБИН" page="20" side="left">
+    <PageShell accent="var(--pink-hot)" section="ПЈЕСМЕ · НИКОЛИНА ТУБИН" page="16" side="left">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>Литерарни радови</SectionMarker>
         <div className="headline" style={{ marginTop: 14, fontSize: 50, lineHeight: 0.95 }}>
@@ -132,7 +132,7 @@ function PagePoemsNikolina2() {
 Сад ми те више није жао!`;
 
   return (
-    <PageShell accent="var(--pink-hot)" section="ПЈЕСМЕ · НИКОЛИНА ТУБИН" page="21" side="right">
+    <PageShell accent="var(--pink-hot)" section="ПЈЕСМЕ · НИКОЛИНА ТУБИН" page="17" side="right">
       <div style={{ padding: '90px 50px 60px' }}>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 18,
           height: 880 }}>
@@ -191,7 +191,7 @@ function PagePoemsOci() {
 И чувам их сваки дан.`;
 
   return (
-    <PageShell accent="var(--purple)" section="ПЈЕСМЕ · СЕДМИ РАЗРЕД" page="22" side="left">
+    <PageShell accent="var(--purple)" section="ПЈЕСМЕ · СЕДМИ РАЗРЕД" page="18" side="left">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>Литерарни радови</SectionMarker>
         <div className="headline" style={{ marginTop: 14, fontSize: 56, lineHeight: 0.94 }}>
@@ -200,7 +200,7 @@ function PagePoemsOci() {
         </div>
         <div className="deck" style={{ marginTop: 14, maxWidth: 540 }}>
           Поред наше Николине, изузетан таленат за писање пјесама показују и ученици
-          VII² одјељења — Александра Ритан и Александар Балабан.
+          7. разреда — Александра Ритан и Александар Балабан.
         </div>
 
         <div style={{ marginTop: 30, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 18,
@@ -208,14 +208,14 @@ function PagePoemsOci() {
           <PoemCard
             title="Очи"
             author="Александра Ритан"
-            grade="VII² одјељење"
+            grade="7. разред"
             accent="var(--pink)"
             text={ociA}
           />
           <PoemCard
             title="Очи"
             author="Александар Балабан"
-            grade="VII² одјељење"
+            grade="7. разред"
             accent="var(--teal)"
             text={ociB}
           />
@@ -225,6 +225,45 @@ function PagePoemsOci() {
   );
 }
 
+// 23 — ЛИКОВНИ РАДОВИ
+function PageLikovniRadovi() {
+  const portrait  = [1, 2, 3, 4, 5, 6, 7];
+  const landscape = [8, 9, 10, 11, 12];
+  const img = (n, h) => (
+    <img key={n} src={`assets/likovno/${n}.jpg`} alt=""
+      style={{ width: '100%', height: h, objectFit: 'cover', display: 'block', borderRadius: 2 }} />
+  );
+
+  return (
+    <PageShell accent="var(--purple)" section="ЛИКОВНИ РАДОВИ" page="19" side="left">
+      <div style={{ padding: '90px 50px 60px' }}>
+        <SectionMarker>04 · Активности</SectionMarker>
+        <div className="headline" style={{ marginTop: 12, fontSize: 56, lineHeight: 0.94 }}>
+          Ликовни <em>радови</em>.
+        </div>
+
+        {/* Portrait 1–4 */}
+        <div style={{ marginTop: 18, display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 6 }}>
+          {portrait.slice(0, 4).map(n => img(n, 160))}
+        </div>
+        {/* Portrait 5–7 */}
+        <div style={{ marginTop: 6, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 6 }}>
+          {portrait.slice(4).map(n => img(n, 218))}
+        </div>
+
+        {/* Landscape 8–10 */}
+        <div style={{ marginTop: 12, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 6 }}>
+          {landscape.slice(0, 3).map(n => img(n, 140))}
+        </div>
+        {/* Landscape 11–12 */}
+        <div style={{ marginTop: 6, display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 6 }}>
+          {landscape.slice(3).map(n => img(n, 193))}
+        </div>
+      </div>
+    </PageShell>
+  );
+}
+
 Object.assign(window, {
-  PagePoemsNikolina1, PagePoemsNikolina2, PagePoemsOci,
+  PagePoemsNikolina1, PagePoemsNikolina2, PagePoemsOci, PageLikovniRadovi,
 });

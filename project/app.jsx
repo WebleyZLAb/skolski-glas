@@ -48,7 +48,7 @@ function App() {
         <DCArtboard id="priredbe-2" label="12 · Приредбе (2)" width={W} height={H}>
           <PageWrap width={W} height={H}><PagePriredbe2 /></PageWrap>
         </DCArtboard>
-        <DCArtboard id="uredjenje" label="14 · Уређење простора" width={W} height={H}>
+        <DCArtboard id="uredjenje" label="13 · Уређење простора" width={W} height={H}>
           <PageWrap width={W} height={H}><PageUredjenje /></PageWrap>
         </DCArtboard>
         <DCArtboard id="sport" label="16 · Школска такмичења" width={W} height={H}>
@@ -69,6 +69,9 @@ function App() {
         <DCArtboard id="pesme-oci" label="22 · Очи × 2" width={W} height={H}>
           <PageWrap width={W} height={H}><PagePoemsOci /></PageWrap>
         </DCArtboard>
+        <DCArtboard id="likovni" label="23 · Ликовни радови" width={W} height={H}>
+          <PageWrap width={W} height={H}><PageLikovniRadovi /></PageWrap>
+        </DCArtboard>
         <DCArtboard id="sah" label="24 · Шах у нашој школи" width={W} height={H}>
           <PageWrap width={W} height={H}><PageSah /></PageWrap>
         </DCArtboard>
@@ -78,16 +81,16 @@ function App() {
         <DCArtboard id="strucna" label="25 · Стручна усавршавања" width={W} height={H}>
           <PageWrap width={W} height={H}><PageStrucnaUsavrsavanja /></PageWrap>
         </DCArtboard>
-        <DCArtboard id="dani" label="27 · Међународни дани" width={W} height={H}>
+        <DCArtboard id="dani" label="26 · Међународни дани" width={W} height={H}>
           <PageWrap width={W} height={H}><PageMedjunarodniDani /></PageWrap>
         </DCArtboard>
-        <DCArtboard id="zanimljivosti" label="28 · Весела страница" width={W} height={H}>
+        <DCArtboard id="zanimljivosti" label="27 · Весела страница" width={W} height={H}>
           <PageWrap width={W} height={H}><PageZanimljivosti /></PageWrap>
         </DCArtboard>
-        <DCArtboard id="zanimljivosti-2" label="29 · Занимљивости" width={W} height={H}>
+        <DCArtboard id="zanimljivosti-2" label="28 · Занимљивости" width={W} height={H}>
           <PageWrap width={W} height={H}><PageZanimljivosti2 /></PageWrap>
         </DCArtboard>
-        <DCArtboard id="zakljucak" label="30 · Закључак" width={W} height={H}>
+        <DCArtboard id="zakljucak" label="29 · Закључак" width={W} height={H}>
           <PageWrap width={W} height={H}><PageZakljucak /></PageWrap>
         </DCArtboard>
       </DCSection>

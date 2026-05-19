@@ -87,7 +87,10 @@ function Photo({ src, label, caption, height = 200, style = {} }) {
   return (
     <div>
       {src
-        ? <img src={src} alt={label || ''} style={{ width: '100%', height, objectFit: 'cover', display: 'block', borderRadius: 3, ...style }} />
+        ? <div style={{ position: 'relative' }}>
+            <img src={src} alt={label || ''} style={{ width: '100%', height, objectFit: 'cover', display: 'block', borderRadius: 3, ...style }} />
+            {label && <div className="ph-label">{label}</div>}
+          </div>
         : <div className="photo" style={{ height, borderRadius: 3, ...style }}>
             {label && <div className="ph-label">{label}</div>}
           </div>
