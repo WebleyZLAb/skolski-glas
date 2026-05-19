@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="sr">
 <head>
   <meta charset="utf-8" />
@@ -1659,7 +1659,8 @@ function PageEditorial() {
       letterSpacing: '0.18em',
       fontWeight: 700,
       color: 'var(--ink-mute)',
-      textTransform: 'uppercase'
+      textTransform: 'uppercase',
+      whiteSpace: 'nowrap'
     }
   }, "\u0408\u0423 \u041E\u0428 \u201E\u041C\u0410\u0408\u041A\u0410 \u041A\u041D\u0415\u0416\u041E\u041F\u041E\u0409\u041A\u0410\"", /*#__PURE__*/React.createElement("br", null), "\u041A\u043D\u0435\u0436\u0438\u0446\u0430"))));
 }
@@ -2318,45 +2319,26 @@ function PagePriredbe2() {
       left: 50,
       right: 50,
       display: 'grid',
-      gridTemplateColumns: 'repeat(4, 1fr)',
+      gridTemplateColumns: '1fr 1fr',
       gap: 10
     }
-  }, [{
-    d: '19. ДЕЦ.',
-    t: 'Свети Никола'
-  }, {
-    d: '27. ЈАН.',
-    t: 'Школска слава · Свети Сава'
-  }, {
-    d: '08. МАР.',
-    t: 'Дан жена'
-  }, {
-    d: '20. АПР.',
-    t: 'У сусрет Васкрсу'
-  }].map((d, i) => /*#__PURE__*/React.createElement("div", {
-    key: i,
-    style: {
-      borderTop: '2px solid var(--pink)',
-      paddingTop: 10
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontFamily: 'var(--sans)',
-      fontSize: 10,
-      letterSpacing: '0.18em',
-      fontWeight: 800,
-      color: 'var(--pink)'
-    }
-  }, d.d), /*#__PURE__*/React.createElement("div", {
-    style: {
-      marginTop: 4,
-      fontFamily: 'var(--serif)',
-      fontSize: 12,
-      color: 'var(--ink)',
-      lineHeight: 1.35,
-      fontStyle: 'italic'
-    }
-  }, d.t))))));
+  }, /*#__PURE__*/React.createElement(Photo, {
+    label: "\u0424\u041E\u0422\u041E\u0413\u0420\u0410\u0424\u0418\u0408\u0410 3",
+    height: 110,
+    caption: "\u041F\u0440\u0438\u0440\u0435\u0434\u0431\u0430 \u0443\u0447\u0435\u043D\u0438\u043A\u0430 \u043D\u0430\u0448\u0435 \u0448\u043A\u043E\u043B\u0435."
+  }), /*#__PURE__*/React.createElement(Photo, {
+    label: "\u0424\u041E\u0422\u041E\u0413\u0420\u0410\u0424\u0418\u0408\u0410 4",
+    height: 110,
+    caption: "\u041F\u0440\u0438\u0440\u0435\u0434\u0431\u0430 \u0443\u0447\u0435\u043D\u0438\u043A\u0430 \u043D\u0430\u0448\u0435 \u0448\u043A\u043E\u043B\u0435."
+  }), /*#__PURE__*/React.createElement(Photo, {
+    label: "\u0424\u041E\u0422\u041E\u0413\u0420\u0410\u0424\u0418\u0408\u0410 5",
+    height: 110,
+    caption: "\u041F\u0440\u0438\u0440\u0435\u0434\u0431\u0430 \u0443\u0447\u0435\u043D\u0438\u043A\u0430 \u043D\u0430\u0448\u0435 \u0448\u043A\u043E\u043B\u0435."
+  }), /*#__PURE__*/React.createElement(Photo, {
+    label: "\u0424\u041E\u0422\u041E\u0413\u0420\u0410\u0424\u0418\u0408\u0410 6",
+    height: 110,
+    caption: "\u041F\u0440\u0438\u0440\u0435\u0434\u0431\u0430 \u0443\u0447\u0435\u043D\u0438\u043A\u0430 \u043D\u0430\u0448\u0435 \u0448\u043A\u043E\u043B\u0435."
+  })));
 }
 
 // 10 — САРАДЊА (3) · Тениски терен
@@ -3558,66 +3540,13 @@ function PageMedjunarodniDani() {
 
 // 28 — ЗАНИМЉИВОСТИ И ВЕСЕЛА СТРАНА (placeholder)
 function PageZanimljivosti() {
-  return /*#__PURE__*/React.createElement(PageShell, {
-    accent: "var(--orange-deep)",
-    section: "\u0412\u0415\u0421\u0415\u041B\u0410 \u0421\u0422\u0420\u0410\u041D\u0410",
-    page: "28",
-    side: "left"
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      padding: '90px 50px 60px'
-    }
-  }, /*#__PURE__*/React.createElement(SectionMarker, null, "07 \xB7 \u0417\u0430 \u043A\u0440\u0430\u0458"), /*#__PURE__*/React.createElement("div", {
-    className: "headline",
-    style: {
-      marginTop: 14,
-      fontSize: 64,
-      lineHeight: 0.94
-    }
-  }, "\u0417\u0430\u043D\u0438\u043C\u0459\u0438\u0432\u043E\u0441\u0442\u0438", /*#__PURE__*/React.createElement("br", null), "\u0438 ", /*#__PURE__*/React.createElement("em", {
-    style: {
-      fontFamily: 'var(--script)',
-      fontSize: 78,
-      fontWeight: 700,
-      color: 'var(--orange-deep)'
-    }
-  }, "\u0432\u0435\u0441\u0435\u043B\u0430"), " \u0441\u0442\u0440\u0430\u043D\u0430."), /*#__PURE__*/React.createElement("div", {
-    className: "deck",
-    style: {
-      marginTop: 14
-    }
-  }, "\u0417\u0430\u0433\u043E\u043D\u0435\u0442\u043A\u0435, \u043F\u0438\u0442\u0430\u043B\u0438\u0446\u0435, \u0437\u0430\u043D\u0438\u043C\u0459\u0438\u0432\u0435 \u0447\u0438\u045A\u0435\u043D\u0438\u0446\u0435 \u2014 \u043F\u0440\u043E\u0441\u0442\u043E\u0440 \u0437\u0430 \u043D\u0430\u0441\u043C\u0438\u0458\u0435\u0448\u0438\u0442\u0438 \u0441\u0435 \u0438 \u043F\u0440\u043E\u0432\u0458\u0435\u0440\u0438\u0442\u0438 \u0448\u0442\u0430 \u0441\u043C\u043E \u0437\u0430\u043F\u0430\u043C\u0442\u0438\u043B\u0438 \u0438\u0437 \u043E\u0432\u0435 \u0448\u043A\u043E\u043B\u0441\u043A\u0435 \u0433\u043E\u0434\u0438\u043D\u0435."), /*#__PURE__*/React.createElement("div", {
-    style: {
-      marginTop: 30,
-      display: 'grid',
-      gridTemplateColumns: '1fr 1fr',
-      gap: 18
-    }
-  }, /*#__PURE__*/React.createElement(PlaceholderPanel, null, "\u0421\u0435\u0433\u043C\u0435\u043D\u0442 \u0441\u0430 \u0432\u0438\u0446\u0435\u0432\u0438\u043C\u0430, \u043F\u0438\u0442\u0430\u043B\u0438\u0446\u0430\u043C\u0430, \u0437\u0430\u0433\u043E\u043D\u0435\u0442\u043A\u0430\u043C\u0430 \u0438 \u0437\u0430\u043D\u0438\u043C\u0459\u0438\u0432\u0438\u043C \u0447\u0438\u045A\u0435\u043D\u0438\u0446\u0430\u043C\u0430 \u0431\u0438\u045B\u0435 \u043E\u0432\u0434\u0458\u0435 \u043F\u0440\u0438\u043A\u0430\u0437\u0430\u043D \u043A\u0430\u0434\u0430 \u0433\u0430 \u0434\u043E\u0441\u0442\u0430\u0432\u0438\u0442\u0435. \u041F\u0440\u043E\u0441\u0442\u043E\u0440 \u0458\u0435 \u043F\u0440\u0435\u0434\u0432\u0438\u0452\u0435\u043D \u0438 \u0437\u0430 \u0443\u0447\u0435\u043D\u0438\u0447\u043A\u0435 \u0434\u043E\u0441\u043A\u043E\u0447\u0438\u0446\u0435 \u0438 \u043A\u0440\u0430\u0442\u043A\u0435 \u0448\u0430\u043B\u0435."), /*#__PURE__*/React.createElement(PlaceholderPanel, null, "\u041E\u0432\u0434\u0458\u0435 \u0441\u0435 \u043C\u043E\u0433\u0443 \u043F\u0440\u0438\u043A\u0430\u0437\u0430\u0442\u0438 \u043A\u0432\u0438\u0437\u043E\u0432\u0438, \u0442\u0435\u0441\u0442\u043E\u0432\u0438 \u043E\u043F\u0448\u0442\u0435 \u043A\u0443\u043B\u0442\u0443\u0440\u0435, \u043C\u0438\u043D\u0438-\u0441\u043B\u043E\u0436\u0430\u043B\u0438\u0446\u0435 \u0438 \u043A\u0440\u0430\u0442\u043A\u0435 \u0437\u0430\u043D\u0430\u043B\u0438\u0447\u043D\u043E\u0441\u0442\u0438 \u043D\u0430 \u0442\u0435\u043C\u0443 \u0448\u043A\u043E\u043B\u0435, \u043F\u0440\u0438\u0440\u043E\u0434\u0435, \u0438\u0441\u0442\u043E\u0440\u0438\u0458\u0435 \u0438 \u043D\u0430\u0443\u043A\u0435.")), /*#__PURE__*/React.createElement("div", {
-    style: {
-      marginTop: 18,
-      padding: '18px 22px',
-      background: 'var(--cream)',
-      borderLeft: '3px solid var(--orange-deep)'
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "byline",
-    style: {
-      color: 'var(--orange-deep)'
-    }
-  }, "\u0417\u043D\u0430\u0448 \u043B\u0438 \u0434\u0430..."), /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontFamily: 'var(--serif)',
-      fontSize: 13,
-      fontStyle: 'italic',
-      color: 'var(--ink)',
-      marginTop: 6,
-      lineHeight: 1.5
-    }
-  }, "...\u0441\u0432\u0458\u0435\u0442\u043B\u043E\u0441\u0442\u0438 \u043E\u0434 \u0421\u0443\u043D\u0446\u0430 \u0434\u043E \u0417\u0435\u043C\u0459\u0435 \u0442\u0440\u0435\u0431\u0430 \u0442\u0430\u0447\u043D\u043E ", /*#__PURE__*/React.createElement("strong", null, "8 \u043C\u0438\u043D\u0443\u0442\u0430"), ", \u0430 \u041D\u0438\u043A\u043E\u043B\u0430 \u0422\u0435\u0441\u043B\u0430, \u043D\u0430\u0448 \u043F\u0430\u0442\u0440\u043E\u043D, \u0433\u043E\u0432\u043E\u0440\u0438\u043E \u0458\u0435 ", /*#__PURE__*/React.createElement("strong", null, "\u043E\u0441\u0430\u043C \u0458\u0435\u0437\u0438\u043A\u0430"), "?"))));
+  var jokes = [[{t: "\u0414\u043E\u043A\u0442\u043E\u0440\u0435, \u0438\u043C\u0430\u043C \u043F\u0440\u043E\u0431\u043B\u0435\u043C \u0441\u0430 \u043F\u0430\u043C\u045B\u0435\u045A\u0435\u043C."}, {t: "\u2013 \u041E\u0434 \u043A\u0430\u0434\u0430?"}, {t: "\u2013 \u041E\u0434 \u043A\u0430\u0434\u0430 \u0448\u0442\u0430?"}], [{role: "\u0423\u0427\u0418\u0422\u0415\u0409\u0418\u0426\u0410", t: "\u2013 \u041F\u0435\u0440\u0438\u0446\u0435, \u043D\u0430\u0431\u0440\u043E\u0458 \u043F\u0435\u0442 \u0436\u0438\u0432\u043E\u0442\u0438\u045A\u0430 \u043A\u043E\u0458\u0435 \u0436\u0438\u0432\u0435 \u0443 \u0410\u0444\u0440\u0438\u0446\u0438."}, {role: "\u041F\u0415\u0420\u0418\u0426\u0410", t: "\u2013 \u0422\u0440\u0438 \u0441\u043B\u043E\u043D\u0430 \u0438 \u0434\u0432\u0438\u0458\u0435 \u0436\u0438\u0440\u0430\u0444\u0435."}], [{t: "\u041A\u043E\u043C\u0448\u0438\u0458\u0430, \u0432\u0430\u0448 \u043F\u0430\u0441 \u0458\u0443\u0440\u0438 \u0447\u043E\u0432\u0458\u0435\u043A\u0430 \u043D\u0430 \u0431\u0438\u0446\u0438\u043A\u043B\u0443!"}, {t: "\u2013 \u041D\u0435\u043C\u0430 \u0448\u0430\u043D\u0441\u0435, \u043D\u0430\u0448 \u043F\u0430\u0441 \u043D\u0435 \u0437\u043D\u0430 \u0434\u0430 \u0432\u043E\u0437\u0438 \u0431\u0438\u0446\u0438\u043A\u043B."}], [{role: "\u041C\u0410\u041C\u0410", t: "Kako \u0458\u0435 \u0434\u043E\u0431\u0440\u043E \u0443 \u0448\u043A\u043E\u043B\u0438?"}, {role: "\u0421\u0418\u041D", t: "Bilo \u0458\u0435 \u0434\u043E\u0431\u0440\u043E."}, {role: "\u041C\u0410\u041C\u0410", t: "\u0408\u0435\u0441\u0438 \u043B\u0438 \u043D\u0435\u0448\u0442\u043E \u043E\u0434\u0433\u043E\u0432\u0430\u0440\u0430\u043E?"}, {role: "\u0421\u0418\u041D", t: "\u0408\u0435\u0441\u0430\u043C?"}, {role: "\u041C\u0410\u041C\u0410", t: "\u0428\u0442\u0430 \u0458\u0435 \u0443\u0447\u0438\u0442\u0435\u0459\u0438\u0446\u0430 \u043F\u0438\u0442\u0430\u043B\u0430?"}, {role: "\u0421\u0418\u041D", t: "\u041A\u043E \u043D\u0438\u0458\u0435 \u0443\u0440\u0430\u0434\u0438\u043E \u0437\u0430\u0434\u0430\u045B\u0443."}], [{t: "\u2013 \u041C\u043E\u0458 \u043F\u0440\u0438\u0458\u0430\u0442\u0435\u0459 \u0458\u0435 \u043D\u0430\u043F\u0438\u0441\u0430\u043E \u043A\u045A\u0438\u0433\u0443: \u201E\u041A\u0430\u043A\u043E \u043F\u043E\u0441\u0442\u0430\u0442\u0438 \u0431\u043E\u0433\u0430\u0442" \u0441\u0430\u043C\u043E \u0458\u043E\u0448 \u0443\u0432\u0438\u0458\u0435\u043A \u043D\u0435\u043C\u0430 \u043D\u043E\u0432\u0446\u0430 \u0434\u0430 \u0458\u0443 \u043E\u0431\u0458\u0430\u0432\u0438."}, {t: "\u2013 \u041A\u0430\u0436\u0438 \u043C\u0443 \u0434\u0430 \u043F\u0440\u043E\u0447\u0438\u0442\u0430 \u043A\u045A\u0438\u0433\u0443."}], [{t: "\u2013 \u041C\u0430\u043C\u0430, \u0437\u0430\u0448\u0442\u043E \u043C\u0438 \u0438\u0441\u043A\u0459\u0443\u0447\u0443\u0458\u0435\u0448 \u0438\u043D\u0442\u0435\u0440\u043D\u0435\u0442?"}, {t: "\u2013 \u0414\u0430 \u0431\u0438 \u0441\u0435 \u0443\u043A\u0459\u0443\u0447\u0438\u043E \u0443 \u0441\u0442\u0432\u0430\u0440\u043D\u0438 \u0436\u0438\u0432\u043E\u0442."}]];
+  return /*#__PURE__*/React.createElement(PageShell, {accent: "var(--orange-deep)", section: "\u0412\u0415\u0421\u0415\u041B\u0410 \u0421\u0422\u0420\u0410\u041D\u0418\u0426\u0410", page: "28", side: "left"}, /*#__PURE__*/React.createElement("div", {style: {padding: '90px 50px 60px'}}, /*#__PURE__*/React.createElement(SectionMarker, null, "07 \u00B7 \u0417\u0430 \u043A\u0440\u0430\u0458"), /*#__PURE__*/React.createElement("div", {className: "headline", style: {marginTop: 14, fontSize: 64, lineHeight: 0.94}}, "\u0412\u0435\u0441\u0435\u043B\u0430", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("em", {style: {fontFamily: 'var(--script)', fontSize: 72, fontWeight: 700, color: 'var(--orange-deep)'}}, "\u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0430"), "."), /*#__PURE__*/React.createElement("div", {className: "deck", style: {marginTop: 14}}, "\u0428\u0435\u0441\u0442 \u0448\u043A\u043E\u043B\u0441\u043A\u0438\u0445 \u0432\u0438\u0446\u0430 \u0437\u0430 \u043A\u0440\u0430\u0458 \u2014 \u0458\u0435\u0440 \u0431\u0435\u0437 \u0441\u043C\u0438\u0458\u0435\u0445\u0430 \u043D\u0438\u0458\u0435 \u043D\u0438 \u0448\u043A\u043E\u043B\u0430."), /*#__PURE__*/React.createElement("div", {style: {marginTop: 24, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 32px'}}, [[jokes[0], jokes[1], jokes[2]], [jokes[3], jokes[4], jokes[5]]].map(function(col, ci) { return /*#__PURE__*/React.createElement("div", {key: ci}, col.map(function(lines, i) { return /*#__PURE__*/React.createElement("div", {key: i, style: {borderTop: '1px solid var(--line)', paddingTop: 12, marginBottom: 16}}, lines.map(function(line, j) { return /*#__PURE__*/React.createElement("div", {key: j, style: {marginBottom: 3}}, line.role && /*#__PURE__*/React.createElement("span", {style: {fontFamily: 'var(--sans)', fontSize: 9, fontWeight: 800, letterSpacing: '0.18em', color: 'var(--orange-deep)', textTransform: 'uppercase', marginRight: 5, display: 'block'}}, line.role, ":"), /*#__PURE__*/React.createElement("span", {style: {fontFamily: 'var(--serif)', fontSize: 12, color: 'var(--ink)', lineHeight: 1.5, fontStyle: 'italic'}}, line.t)); })); })); }))));
 }
-
-// 30 — ЗАКЉУЧАК
+function PageZanimljivosti2() {
+  var facts = ["\u041C\u0435\u0434 \u043D\u0435 \u043C\u043E\u0436\u0435 \u0434\u0430 \u0441\u0435 \u043F\u043E\u043A\u0432\u0430\u0440\u0438. \u0410\u0440\u0445\u0435\u043E\u043B\u043E\u0437\u0438 \u0441\u0443 \u0443 \u0435\u0433\u0438\u043F\u0430\u0442\u0441\u043A\u0438\u043C \u0433\u0440\u043E\u0431\u043D\u0438\u0446\u0430\u043C\u0430 \u043F\u0440\u043E\u043D\u0430\u0448\u043B\u0438 \u043F\u043E\u0441\u0443\u0434\u0435 \u043C\u0435\u0434\u0430 \u0441\u0442\u0430\u0440\u0435 \u0432\u0438\u0448\u0435 \u0445\u0438\u0459\u0430\u0434\u0430 \u0433\u043E\u0434\u0438\u043D\u0430 \u043A\u043E\u0458\u0435 \u0441\u0443 \u0438 \u0434\u0430\u0459\u0435 \u0431\u0438\u043B\u0435 \u0458\u0435\u0441\u0442\u0438\u0432\u0435.","\u0425\u043E\u0431\u043E\u0442\u043D\u0438\u0446\u0430 \u0438\u043C\u0430 \u0442\u0440\u0438 \u0441\u0440\u0446\u0430 \u0438 \u043F\u043B\u0430\u0432\u0443 \u043A\u0440\u0432.","\u041D\u0430 \u0412\u0435\u043D\u0435\u0440\u0438 \u0458\u0435\u0434\u0430\u043D \u0434\u0430\u043D \u0442\u0440\u0430\u0458\u0435 \u0434\u0443\u0436\u0435 \u043D\u0435\u0433\u043E \u0458\u0435\u0434\u043D\u0430 \u0433\u043E\u0434\u0438\u043D\u0430.","\u0411\u0430\u043D\u0430\u043D\u0435 \u0441\u0443 \u043F\u0440\u0438\u0440\u043E\u0434\u043D\u043E \u0431\u043B\u0430\u0433\u043E \u0440\u0430\u0434\u0438\u043E\u0430\u043A\u0442\u0438\u0432\u043D\u0435 \u0458\u0435\u0440 \u0441\u0430\u0434\u0440\u0436\u0435 \u043A\u0430\u043B\u0438\u0458\u0443\u043C.","\u0421\u0440\u0446\u0435 \u043F\u043B\u0430\u0432\u043E\u0433 \u043A\u0438\u0442\u0430 \u0442\u043E\u043B\u0438\u043A\u043E \u0458\u0435 \u0432\u0435\u043B\u0438\u043A\u043E \u0434\u0430 \u0447\u043E\u0432\u0458\u0435\u043A \u043C\u043E\u0436\u0435 \u0434\u0430 \u043F\u0440\u043E\u0452\u0435 \u043A\u0440\u043E\u0437 \u045A\u0435\u0433\u043E\u0432\u0435 \u0430\u0440\u0442\u0435\u0440\u0438\u0458\u0435.","\u041C\u0443\u0459\u0430 \u0458\u0435 \u0442\u043E\u043F\u043B\u0438\u0458\u0430 \u043E\u0434 \u043F\u043E\u0432\u0440\u0448\u0438\u043D\u0435 \u0421\u0443\u043D\u0446\u0430 \u2014 \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0430 \u043C\u0443\u0459\u0435 \u043C\u043E\u0436\u0435 \u0434\u043E\u0441\u0442\u0438\u045B\u0438 \u0438 \u0434\u043E 30.000\u00B0C.","\u041F\u0443\u0436 \u043C\u043E\u0436\u0435 \u0441\u043F\u0430\u0432\u0430\u0442\u0438 \u0438 \u0434\u043E \u0442\u0440\u0438 \u0433\u043E\u0434\u0438\u043D\u0435 \u0431\u0435\u0437 \u043F\u0440\u0435\u043A\u0438\u0434\u0430.","\u041D\u0430\u0458\u043A\u0440\u0430\u045B\u0438 \u0440\u0430\u0442 \u0443 \u0438\u0441\u0442\u043E\u0440\u0438\u0458\u0438 \u0442\u0440\u0430\u0458\u0430\u043E \u0458\u0435 \u0441\u0430\u043C\u043E 38 \u043C\u0438\u043D\u0443\u0442\u0430 \u2014 \u0432\u043E\u0434\u0438\u043E \u0441\u0435 1896. \u0433\u043E\u0434\u0438\u043D\u0435 \u0438\u0437\u043C\u0435\u0452\u0443 \u0411\u0440\u0438\u0442\u0430\u043D\u0438\u0458\u0435 \u0438 \u0417\u0430\u043D\u0437\u0438\u0431\u0430\u0440\u0430.","\u0409\u0443\u0434\u0441\u043A\u0438 \u043C\u043E\u0437\u0430\u043A \u0438\u043C\u0430 \u0432\u0438\u0448\u0435 \u0432\u0435\u0437\u0430 (\u0441\u0438\u043D\u0430\u043F\u0441\u0438) \u043D\u0435\u0433\u043E \u0448\u0442\u043E \u0443 \u041C\u043B\u0438\u0458\u0435\u0447\u043D\u043E\u043C \u043F\u0443\u0442\u0443 \u0438\u043C\u0430 \u0437\u0432\u0438\u0458\u0435\u0437\u0434\u0430.","\u0410\u0458\u043A\u0443\u043B\u0430 \u0458\u0435 \u0441\u0442\u0430\u0440\u0438\u0458\u0430 \u0432\u0440\u0441\u0442\u0430 \u043E\u0434 \u0434\u0438\u043D\u043E\u0441\u0430\u0443\u0440\u0443\u0441\u0430 \u2014 \u043F\u0440\u0432\u0435 \u0430\u0458\u043A\u0443\u043B\u0435 \u043F\u043E\u0441\u0442\u043E\u0458\u0430\u043B\u0435 \u0441\u0443 \u043F\u0440\u0438\u0458\u0435 \u0432\u0438\u0448\u0435 \u043E\u0434 400 \u043C\u0438\u043B\u0438\u043E\u043D\u0430 \u0433\u043E\u0434\u0438\u043D\u0430.","\u041A\u0430\u0434\u0430 \u0431\u0438 \u0441\u0435 \u0414\u041D\u041A \u0438\u0437 \u0458\u0435\u0434\u043D\u0435 \u0459\u0443\u0434\u0441\u043A\u0435 \u045B\u0435\u043B\u0438\u0458\u0435 \u0440\u0430\u0437\u043C\u043E\u0442\u0430\u043B\u0430, \u0431\u0438\u043B\u0430 \u0431\u0438 \u0434\u0443\u0433\u0430\u0447\u043A\u0430 \u043E\u043A\u043E\u043B\u043E \u0434\u0432\u0430 \u043C\u0435\u0442\u0440\u0430.","\u041F\u043E\u043B\u0430\u0440\u043D\u0438 \u043C\u0435\u0434\u0432\u0458\u0435\u0434\u0438 \u0438\u043C\u0430\u0458\u0443 \u0446\u0440\u043D\u0443 \u043A\u043E\u0436\u0443, \u0430 \u045A\u0438\u0445\u043E\u0432\u043E \u043A\u0440\u0437\u043D\u043E \u0458\u0435 \u0437\u0430\u043F\u0440\u0430\u0432\u043E \u043F\u0440\u043E\u0432\u0438\u0434\u043D\u043E.","\u0417\u0432\u0443\u043A \u0441\u0435 \u0443 \u0432\u043E\u0434\u0438 \u043A\u0440\u0435\u045B\u0435 \u043E\u043A\u043E\u043B\u043E \u0447\u0435\u0442\u0438\u0440\u0438 \u043F\u0443\u0442\u0430 \u0431\u0440\u0436\u0435 \u043D\u0435\u0433\u043E \u043A\u0440\u043E\u0437 \u0432\u0430\u0437\u0434\u0443\u0445.","\u041D\u0430 \u0421\u0430\u0442\u0443\u0440\u043D\u0443 \u0438 \u0408\u0443\u043F\u0438\u0442\u0435\u0440\u0443 \u043C\u043E\u0433\u0443 \u043F\u0430\u0434\u0430\u0442\u0438 "];
+  return /*#__PURE__*/React.createElement(PageShell, {accent: "var(--teal)", section: "\u0417\u0410\u041D\u0418\u041C\u0409\u0418\u0412\u041E\u0421\u0422\u0418", page: "29", side: "right"}, /*#__PURE__*/React.createElement("div", {style: {padding: '90px 50px 60px'}}, /*#__PURE__*/React.createElement(SectionMarker, null, "07 \u00B7 \u0417\u0430 \u043A\u0440\u0430\u0458"), /*#__PURE__*/React.createElement("div", {className: "headline", style: {marginTop: 14, fontSize: 64, lineHeight: 0.94}}, "\u0414\u0430 \u043B\u0438 \u0441\u0438", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("em", {style: {fontFamily: 'var(--script)', fontSize: 72, fontWeight: 700, color: 'var(--teal)'}}, "\u0437\u043D\u0430\u043E"), "?"), /*#__PURE__*/React.createElement("div", {className: "deck", style: {marginTop: 14}}, "\u0427\u0435\u0442\u0440\u043D\u0430\u0435\u0441\u0442 \u0437\u0430\u043D\u0438\u043C\u0459\u0438\u0432\u043E\u0441\u0442\u0438 \u043E \u0441\u0432\u0438\u0458\u0435\u0442\u0443 \u0443 \u043A\u043E\u043C\u0435 \u0436\u0438\u0432\u0438\u043C\u043E \u2014 \u043D\u0435\u043A\u0430 \u0442\u0435 \u0438\u0437\u043D\u0435\u043D\u0430\u0434\u0435."), /*#__PURE__*/React.createElement("div", {style: {marginTop: 24, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 28px'}}, [facts.slice(0, 7), facts.slice(7)].map(function(col, ci) { return /*#__PURE__*/React.createElement("div", {key: ci}, col.map(function(fact, i) { return /*#__PURE__*/React.createElement("div", {key: i, style: {borderTop: '1px solid var(--line)', paddingTop: 9, marginBottom: 4, display: 'flex', gap: 8, alignItems: 'flex-start'}}, /*#__PURE__*/React.createElement("span", {style: {color: 'var(--teal)', fontWeight: 800, fontFamily: 'var(--sans)', fontSize: 14, lineHeight: 1, flexShrink: 0, marginTop: 1}}, "\xB7"), /*#__PURE__*/React.createElement("span", {style: {fontFamily: 'var(--serif)', fontSize: 11.5, color: 'var(--ink)', lineHeight: 1.45}}, fact)); })); }))));
+}
 function PageZakljucak() {
   return /*#__PURE__*/React.createElement(PageShell, {
     accent: "var(--navy)",
@@ -3649,9 +3578,9 @@ function PageZakljucak() {
       gridTemplateColumns: '1fr 1fr',
       gap: 28
     }
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(PlaceholderPanel, null, "\u041A\u0440\u0430\u0442\u043A\u0438 \u0442\u0435\u043A\u0441\u0442-\u0437\u0430\u0445\u0432\u0430\u043B\u043D\u0438\u0446\u0430, \u0438\u043C\u0435\u043D\u0430 \u0441\u0432\u0438\u0445 \u0443\u0447\u0435\u043D\u0438\u043A\u0430, \u043D\u0430\u0441\u0442\u0430\u0432\u043D\u0438\u043A\u0430, \u0440\u043E\u0434\u0438\u0442\u0435\u0459\u0430 \u0438 \u0441\u0430\u0440\u0430\u0434\u043D\u0438\u043A\u0430 \u043A\u043E\u0458\u0438 \u0441\u0443 \u0443\u0447\u0435\u0441\u0442\u0432\u043E\u0432\u0430\u043B\u0438 \u0443 \u0438\u0437\u0440\u0430\u0434\u0438 \u0447\u0430\u0441\u043E\u043F\u0438\u0441\u0430, \u0431\u0438\u045B\u0435 \u043E\u0432\u0434\u0458\u0435 \u043F\u0440\u0438\u043A\u0430\u0437\u0430\u043D\u0438 \u043A\u0430\u0434\u0430 \u0438\u0445 \u0434\u043E\u0441\u0442\u0430\u0432\u0438\u0442\u0435."), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*//*#__PURE__*/React.createElement("div", {
     style: {
-      marginTop: 18
+      marginTop: 0
     }
   }, /*#__PURE__*/React.createElement("div", {
     className: "byline"
@@ -3706,7 +3635,7 @@ function PageZakljucak() {
     style: {
       opacity: 0.7
     }
-  }, "\u0420\u0435\u0434\u0430\u043A\u0446\u0438\u0458\u0430"), /*#__PURE__*/React.createElement("br", null), "\u0408\u0435\u043B\u0435\u043D\u0430 \u0414\u0440\u0459\u0438\u045B \xB7 \u0411\u043E\u0458\u0430\u043D\u0430 \u0417\u0433\u043E\u045A\u0430\u043D\u0438\u043D", /*#__PURE__*/React.createElement("br", null), "\u041C\u0438\u043B\u0435\u043D\u0430 \u041C\u0430\u043D\u0434\u0438\u045B \xB7 \u0411\u043E\u0458\u0430\u043D \u0421\u0430\u043D\u0442\u0440\u0430\u0447", /*#__PURE__*/React.createElement("br", null), "\u0411\u043E\u0436\u0430\u043D\u0430 \u0412\u0443\u043A\u0438\u045B \xB7 \u041C\u043B\u0430\u0434\u0435\u043D \u0422\u043E\u043F\u0438\u045B", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("strong", {
+  }, "\u0420\u0435\u0434\u0430\u043A\u0446\u0438\u0458\u0430"), /*#__PURE__*/React.createElement("br", null), "\u041D\u0438\u043A\u0438\u0446\u0430 \u0412\u0443\u0458\u0438\u043D\u043E\u0432\u0438\u045B \xB7 \u0408\u0435\u043B\u0435\u043D\u0430 \u0414\u0440\u0459\u0438\u045B", /*#__PURE__*/React.createElement("br", null), "\u0411\u043E\u0436\u0430\u043D\u0430 \u0412\u0443\u043A\u0438\u045B \xB7 \u041C\u043B\u0430\u0434\u0435\u043D \u0422\u043E\u043F\u0438\u045B", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("strong", {
     style: {
       opacity: 0.7
     }
@@ -3724,7 +3653,7 @@ function PageZakljucak() {
     }
   }, "\u0434\u043E \u0441\u0443\u0441\u0440\u0435\u0442\u0430 \u0443 19. \u0431\u0440\u043E\u0458\u0443!"))))));
 }
-const PAGE_ORDER = [PageCover, PageTOC, PageEditorial, PagePripremni, PageProjekatTesla, PageAktivnostiOpener, PageSaradnja1, PageSaradnja2, PageSaradnja3, PagePriredbe1, PagePriredbe2, PageUredjenje, PageSport, PageKonkursi, PageLiterarnIntro, PagePoemsNikolina1, PagePoemsNikolina2, PagePoemsOci, PageSah, PageStrucnaUsavrsavanja, PageMedjunarodniDani, PageZanimljivosti, PageZakljucak];
+const PAGE_ORDER = [PageCover, PageTOC, PageEditorial, PagePripremni, PageProjekatTesla, PageAktivnostiOpener, PageSaradnja1, PageSaradnja2, PageSaradnja3, PagePriredbe1, PagePriredbe2, PageUredjenje, PageSport, PageKonkursi, PageLiterarnIntro, PagePoemsNikolina1, PagePoemsNikolina2, PagePoemsOci, PageSah, PageStrucnaUsavrsavanja, PageMedjunarodniDani, PageZanimljivosti, PageZanimljivosti2, PageZakljucak];
 function PrintApp() {
   return /*#__PURE__*/React.createElement("div", {
     id: "pages"

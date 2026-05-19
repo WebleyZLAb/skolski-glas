@@ -81,8 +81,11 @@ function App() {
         <DCArtboard id="dani" label="27 · Међународни дани" width={W} height={H}>
           <PageWrap width={W} height={H}><PageMedjunarodniDani /></PageWrap>
         </DCArtboard>
-        <DCArtboard id="zanimljivosti" label="28 · Занимљивости" width={W} height={H}>
+        <DCArtboard id="zanimljivosti" label="28 · Весела страница" width={W} height={H}>
           <PageWrap width={W} height={H}><PageZanimljivosti /></PageWrap>
+        </DCArtboard>
+        <DCArtboard id="zanimljivosti-2" label="29 · Занимљивости" width={W} height={H}>
+          <PageWrap width={W} height={H}><PageZanimljivosti2 /></PageWrap>
         </DCArtboard>
         <DCArtboard id="zakljucak" label="30 · Закључак" width={W} height={H}>
           <PageWrap width={W} height={H}><PageZakljucak /></PageWrap>

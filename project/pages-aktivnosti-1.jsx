@@ -292,23 +292,16 @@ function PagePriredbe2() {
 
         <div style={{
           position: 'absolute', bottom: 78, left: 50, right: 50,
-          display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 10,
+          display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10,
         }}>
-          {[
-            { d: '19. ДЕЦ.', t: 'Свети Никола' },
-            { d: '27. ЈАН.', t: 'Школска слава · Свети Сава' },
-            { d: '08. МАР.', t: 'Дан жена' },
-            { d: '20. АПР.', t: 'У сусрет Васкрсу' },
-          ].map((d, i) => (
-            <div key={i} style={{
-              borderTop: '2px solid var(--pink)', paddingTop: 10,
-            }}>
-              <div style={{ fontFamily: 'var(--sans)', fontSize: 10, letterSpacing: '0.18em',
-                fontWeight: 800, color: 'var(--pink)' }}>{d.d}</div>
-              <div style={{ marginTop: 4, fontFamily: 'var(--serif)', fontSize: 12, color: 'var(--ink)',
-                lineHeight: 1.35, fontStyle: 'italic' }}>{d.t}</div>
-            </div>
-          ))}
+          <Photo label="ФОТОГРАФИЈА 3" height={110}
+            caption="Приредба ученика наше школе." />
+          <Photo label="ФОТОГРАФИЈА 4" height={110}
+            caption="Приредба ученика наше школе." />
+          <Photo label="ФОТОГРАФИЈА 5" height={110}
+            caption="Приредба ученика наше школе." />
+          <Photo label="ФОТОГРАФИЈА 6" height={110}
+            caption="Приредба ученика наше школе." />
         </div>
       </div>
     </PageShell>

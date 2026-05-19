@@ -253,42 +253,129 @@ function PageMedjunarodniDani() {
   );
 }
 
-// 28 — ЗАНИМЉИВОСТИ И ВЕСЕЛА СТРАНА (placeholder)
+// 28 — ВЕСЕЛА СТРАНИЦА
 function PageZanimljivosti() {
+  const jokes = [
+    [
+      { t: 'Докторе, имам проблем са памћењем.' },
+      { t: '– Од када?' },
+      { t: '– Од када шта?' },
+    ],
+    [
+      { role: 'УЧИТЕЉИЦА', t: '– Перице, наброј пет животиња које живе у Африци.' },
+      { role: 'ПЕРИЦА',    t: '– Три слона и двије жирафе.' },
+    ],
+    [
+      { t: 'Комшија, ваш пас јури човјека на бициклу!' },
+      { t: '– Нема шансе, наш пас не зна да вози бицикл.' },
+    ],
+    [
+      { role: 'МАМА', t: 'Како је било у школи?' },
+      { role: 'СИН',  t: 'Bilo је добро.' },
+      { role: 'МАМА', t: 'Јеси ли нешто одговарао?' },
+      { role: 'СИН',  t: 'Јесам?' },
+      { role: 'МАМА', t: 'Шта је учитељица питала?' },
+      { role: 'СИН',  t: 'Ко није урадио задаћу.' },
+    ],
+    [
+      { t: '– Мој пријатељ је написао књигу: „Како постати богат" само још увијек нема новца да ју објави.' },
+      { t: '– Кажи му да прочита књигу.' },
+    ],
+    [
+      { t: '– Мама, зашто ми искључујеш интернет?' },
+      { t: '– Да би се укључио у стварни живот.' },
+    ],
+  ];
+
   return (
-    <PageShell accent="var(--orange-deep)" section="ВЕСЕЛА СТРАНА" page="28" side="left">
+    <PageShell accent="var(--orange-deep)" section="ВЕСЕЛА СТРАНИЦА" page="28" side="left">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>07 · За крај</SectionMarker>
         <div className="headline" style={{ marginTop: 14, fontSize: 64, lineHeight: 0.94 }}>
-          Занимљивости<br/>
-          и <em style={{ fontFamily: 'var(--script)', fontSize: 78, fontWeight: 700,
-            color: 'var(--orange-deep)' }}>весела</em> страна.
+          Весела<br/>
+          <em style={{ fontFamily: 'var(--script)', fontSize: 72, fontWeight: 700,
+            color: 'var(--orange-deep)' }}>страница</em>.
         </div>
         <div className="deck" style={{ marginTop: 14 }}>
-          Загонетке, питалице, занимљиве чињенице — простор за насмијешити се
-          и провјерити шта смо запамтили из ове школске године.
+          Шест школских вица за крај — јер без смијеха није ни школа.
         </div>
 
-        <div style={{ marginTop: 30, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 18 }}>
-          <PlaceholderPanel>
-            Сегмент са вицевима, питалицама, загонеткама и занимљивим чињеницама
-            биће овдје приказан када га доставите. Простор је предвиђен и за
-            ученичке доскочице и кратке шале.
-          </PlaceholderPanel>
-          <PlaceholderPanel>
-            Овдје се могу приказати квизови, тестови опште културе, мини-сложалице
-            и кратке заналичности на тему школе, природе, историје и науке.
-          </PlaceholderPanel>
+        <div style={{ marginTop: 24, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 32px' }}>
+          {[jokes.slice(0, 3), jokes.slice(3)].map((col, ci) => (
+            <div key={ci}>
+              {col.map((lines, i) => (
+                <div key={i} style={{ borderTop: '1px solid var(--line)', paddingTop: 12, marginBottom: 16 }}>
+                  {lines.map((line, j) => (
+                    <div key={j} style={{ marginBottom: 3 }}>
+                      {line.role && (
+                        <span style={{ fontFamily: 'var(--sans)', fontSize: 9, fontWeight: 800,
+                          letterSpacing: '0.18em', color: 'var(--orange-deep)',
+                          textTransform: 'uppercase', marginRight: 5, display: 'block' }}>
+                          {line.role}:
+                        </span>
+                      )}
+                      <span style={{ fontFamily: 'var(--serif)', fontSize: 12, color: 'var(--ink)',
+                        lineHeight: 1.5, fontStyle: 'italic' }}>
+                        {line.t}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+    </PageShell>
+  );
+}
+
+// 29 — ЗАНИМЉИВОСТИ
+function PageZanimljivosti2() {
+  const facts = [
+    'Мед не може да се поквари. Археолози су у египатским гробницама пронашли посуде меда старе више хиљада година које су и даље биле јестиве.',
+    'Хоботница има три срца и плаву крв.',
+    'На Венери један дан траје дуже негоједна година.',
+    'Банане су природно благо радиоактивне јер садрже калијум.',
+    'Срце плавог кита толико је велико да човјек може да прође кроз његове артерије.',
+    'Муња је топлија од површине Сунца — температура муње може достићи и до 30.000°C.',
+    'Пуж може спавати и до три године без прекида.',
+    'Најкраћи рат у историји трајао је само 38 минута — водио се 1896. године између Британије и Занзибара.',
+    'Људски мозак има више веза (синапси) него што у Млијечном путу има звијезда.',
+    'Ајкула је старија врста од диносауруса — прве ајкуле постојале су прије више од 400 милиона година.',
+    'Када би се ДНК из једне људске ћелије размотала, била би дугачка около два метра.',
+    'Поларни медвједи имају црну кожу, а њихово крзно је заправо провидно.',
+    'Звук се у води креће около четири пута брже него кроз ваздух.',
+    'На Сатурну и Јупитеру могу падати „кише" од дијаманата.',
+  ];
+
+  return (
+    <PageShell accent="var(--teal)" section="ЗАНИМЉИВОСТИ" page="29" side="right">
+      <div style={{ padding: '90px 50px 60px' }}>
+        <SectionMarker>07 · За крај</SectionMarker>
+        <div className="headline" style={{ marginTop: 14, fontSize: 64, lineHeight: 0.94 }}>
+          Да ли си<br/>
+          <em style={{ fontFamily: 'var(--script)', fontSize: 72, fontWeight: 700,
+            color: 'var(--teal)' }}>знао</em>?
+        </div>
+        <div className="deck" style={{ marginTop: 14 }}>
+          Четрнаест занимљивости о свијету у коме живимо — нека те изненаде.
         </div>
 
-        <div style={{ marginTop: 18, padding: '18px 22px', background: 'var(--cream)',
-          borderLeft: '3px solid var(--orange-deep)' }}>
-          <div className="byline" style={{ color: 'var(--orange-deep)' }}>Знаш ли да...</div>
-          <div style={{ fontFamily: 'var(--serif)', fontSize: 13, fontStyle: 'italic',
-            color: 'var(--ink)', marginTop: 6, lineHeight: 1.5 }}>
-            ...свјетлости од Сунца до Земље треба тачно <strong>8 минута</strong>,
-            а Никола Тесла, наш патрон, говорио је <strong>осам језика</strong>?
-          </div>
+        <div style={{ marginTop: 24, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 28px' }}>
+          {[facts.slice(0, 7), facts.slice(7)].map((col, ci) => (
+            <div key={ci}>
+              {col.map((fact, i) => (
+                <div key={i} style={{ borderTop: '1px solid var(--line)', paddingTop: 9,
+                  marginBottom: 4, display: 'flex', gap: 8, alignItems: 'flex-start' }}>
+                  <span style={{ color: 'var(--teal)', fontWeight: 800, fontFamily: 'var(--sans)',
+                    fontSize: 14, lineHeight: 1, flexShrink: 0, marginTop: 1 }}>·</span>
+                  <span style={{ fontFamily: 'var(--serif)', fontSize: 11.5, color: 'var(--ink)',
+                    lineHeight: 1.45 }}>{fact}</span>
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
     </PageShell>
@@ -312,13 +399,7 @@ function PageZakljucak() {
 
         <div style={{ marginTop: 32, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 28 }}>
           <div>
-            <PlaceholderPanel>
-              Кратки текст-захвалница, имена свих ученика, наставника, родитеља и
-              сарадника који су учествовали у изради часописа, биће овдје приказани
-              када их доставите.
-            </PlaceholderPanel>
-
-            <div style={{ marginTop: 18 }}>
+            <div style={{ marginTop: 0 }}>
               <div className="byline">Имали смо част сарађивати са</div>
               <div style={{ marginTop: 8, fontFamily: 'var(--serif)', fontSize: 12.5,
                 lineHeight: 1.7, color: 'var(--ink-soft)', fontStyle: 'italic' }}>
@@ -353,8 +434,7 @@ function PageZakljucak() {
                 Бојана Крњајић<br/><br/>
 
                 <strong style={{ opacity: 0.7 }}>Редакција</strong><br/>
-                Јелена Дрљић · Бојана Згоњанин<br/>
-                Милена Мандић · Бојан Сантрач<br/>
+                Никица Вујиновић · Јелена Дрљић<br/>
                 Божана Вукић · Младен Топић<br/><br/>
 
                 <strong style={{ opacity: 0.7 }}>Школска година</strong><br/>
@@ -376,5 +456,5 @@ function PageZakljucak() {
 
 Object.assign(window, {
   PageSah, PageStrucnaUsavrsavanja, PageMedjunarodniDani,
-  PageZanimljivosti, PageZakljucak,
+  PageZanimljivosti, PageZanimljivosti2, PageZakljucak,
 });

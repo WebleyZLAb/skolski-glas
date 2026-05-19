@@ -148,7 +148,8 @@ function PageEditorial() {
             </div>
           </div>
           <div style={{ textAlign: 'right', fontFamily: 'var(--sans)', fontSize: 11,
-            letterSpacing: '0.18em', fontWeight: 700, color: 'var(--ink-mute)', textTransform: 'uppercase' }}>
+            letterSpacing: '0.18em', fontWeight: 700, color: 'var(--ink-mute)', textTransform: 'uppercase',
+            whiteSpace: 'nowrap' }}>
             ЈУ ОШ „МАЈКА КНЕЖОПОЉКА”<br />Кнежица
           </div>
         </div>
