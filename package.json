@@ -1,0 +1,9 @@
+{
+  "name": "skolski-glas",
+  "scripts": {
+    "dev": "serve project -p 3000 -s"
+  },
+  "devDependencies": {
+    "serve": "^14"
+  }
+}
