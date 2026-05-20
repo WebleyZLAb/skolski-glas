@@ -281,7 +281,7 @@ function PageZanimljivosti() {
           Шест школских вица за крај — јер без смијеха није ни школа.
         </div>
 
-        <div style={{ marginTop: 24, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 32px' }}>
+        <div style={{ marginTop: 40, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 32px' }}>
           {[jokes.slice(0, 3), jokes.slice(3)].map((col, ci) => (
             <div key={ci}>
               {col.map((lines, i) => (
@@ -343,7 +343,7 @@ function PageZanimljivosti2() {
           Четрнаест занимљивости о свијету у коме живимо — нека те изненаде.
         </div>
 
-        <div style={{ marginTop: 24, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 28px' }}>
+        <div style={{ marginTop: 40, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 28px' }}>
           {[facts.slice(0, 7), facts.slice(7)].map((col, ci) => (
             <div key={ci}>
               {col.map((fact, i) => (
@@ -351,8 +351,8 @@ function PageZanimljivosti2() {
                   marginBottom: 4, display: 'flex', gap: 8, alignItems: 'flex-start' }}>
                   <span style={{ color: 'var(--teal)', fontWeight: 800, fontFamily: 'var(--sans)',
                     fontSize: 14, lineHeight: 1, flexShrink: 0, marginTop: 1 }}>·</span>
-                  <span style={{ fontFamily: 'var(--serif)', fontSize: 11.5, color: 'var(--ink)',
-                    lineHeight: 1.45 }}>{fact}</span>
+                  <span style={{ fontFamily: 'var(--serif)', fontSize: 13, color: 'var(--ink)',
+                    lineHeight: 1.5 }}>{fact}</span>
                 </div>
               ))}
             </div>
