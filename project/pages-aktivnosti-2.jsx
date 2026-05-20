@@ -247,7 +247,7 @@ function PageLiterarnIntro() {
 
         <div style={{ marginTop: 22, display: 'grid', gridTemplateColumns: '0.9fr 1.1fr', gap: 22, alignItems: 'start' }}>
           <div>
-            <Photo label="НИКОЛИНА ТУБИН · 9. РАЗРЕД" height={260}
+            <Photo src="assets/nikolina-tubin.jpg" label="НИКОЛИНА ТУБИН · 9. РАЗРЕД" height={260}
               caption="Николина у школској библиотеци, мај 2026." />
             <div style={{ marginTop: 12, padding: '12px 14px', background: 'var(--cream)',
               borderLeft: '3px solid var(--pink-hot)' }}>

@@ -225,15 +225,43 @@ function PagePoemsOci() {
   );
 }
 
-// 23 — ЛИКОВНИ РАДОВИ
-function PageLikovniRadovi() {
-  const portrait  = [1, 2, 3, 4, 5, 6, 7];
-  const landscape = [8, 9, 10, 11, 12];
-  const img = (n, h) => (
-    <img key={n} src={`assets/likovno/${n}.jpg`} alt=""
-      style={{ width: '100%', height: h, objectFit: 'cover', display: 'block', borderRadius: 2 }} />
+// Likovna galerija — helper
+function LikovnaGrid({ images }) {
+  const s = (f) => `assets/likovno/${encodeURIComponent(f)}`;
+  return (
+    <div style={{ marginTop: 18, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px 16px' }}>
+      {images.map(({ file, name, razred }) => (
+        <div key={file}>
+          <div style={{ background: '#f0ece4', borderRadius: 3, overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', height: 210 }}>
+            <img src={s(file)} alt={name}
+              style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', display: 'block' }} />
+          </div>
+          <div style={{ marginTop: 5, textAlign: 'center' }}>
+            <div style={{ fontFamily: 'var(--sans)', fontSize: 10.5, fontWeight: 700,
+              color: 'var(--ink)', letterSpacing: '-0.01em' }}>
+              {name}
+            </div>
+            <div style={{ fontFamily: 'var(--sans)', fontSize: 9.5, fontWeight: 600,
+              color: 'var(--ink-soft)', marginTop: 1 }}>
+              {razred}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
   );
+}
 
+// 19 — ЛИКОВНИ РАДОВИ (1)
+function PageLikovniRadovi() {
+  const images = [
+    { file: '1. Уна Ковачић - VII2.jpg',         name: 'Уна Ковачић',         razred: 'VII-2' },
+    { file: '2 .Александра Ритан - VIII2.jpg',  name: 'Александра Ритан',    razred: 'VIII-2' },
+    { file: '3. Сара Мандић - III1.jpg',        name: 'Сара Мандић',         razred: 'III-1' },
+    { file: '4. Николина Раниловић - VIII1.jpg', name: 'Николина Раниловић', razred: 'VIII-1' },
+    { file: '5. Дариа Личанин - VII2.jpg',      name: 'Дариа Личанин',       razred: 'VII-2' },
+    { file: '6. Анђела Родић - VII1.jpg',       name: 'Анђела Родић',        razred: 'VII-1' },
+  ];
   return (
     <PageShell accent="var(--purple)" section="ЛИКОВНИ РАДОВИ" page="19" side="left">
       <div style={{ padding: '90px 50px 60px' }}>
@@ -241,29 +269,35 @@ function PageLikovniRadovi() {
         <div className="headline" style={{ marginTop: 12, fontSize: 56, lineHeight: 0.94 }}>
           Ликовни <em>радови</em>.
         </div>
+        <LikovnaGrid images={images} />
+      </div>
+    </PageShell>
+  );
+}
 
-        {/* Portrait 1–4 */}
-        <div style={{ marginTop: 18, display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 6 }}>
-          {portrait.slice(0, 4).map(n => img(n, 160))}
+// 20 — ЛИКОВНИ РАДОВИ (2)
+function PageLikovniRadovi2() {
+  const images = [
+    { file: '7. Весна Ђенадија - VIII1.jpg',    name: 'Весна Ђенадија',    razred: 'VIII-1' },
+    { file: '8. Николина Тубин - IX1.jpg',      name: 'Николина Тубин',    razred: 'IX-1' },
+    { file: '9. Дариа Личанин - VII2.jpg',      name: 'Дариа Личанин',     razred: 'VII-2' },
+    { file: '10. Кристина Личанин - VI1.jpg',   name: 'Кристина Личанин',  razred: 'VI-1' },
+    { file: '11. Лана Милаковић - VI1.jpg',     name: 'Лана Милаковић',    razred: 'VI-1' },
+    { file: '12. Анамарија Цвијић - VII1.jpg',  name: 'Анамарија Цвијић',  razred: 'VII-1' },
+  ];
+  return (
+    <PageShell accent="var(--purple)" section="ЛИКОВНИ РАДОВИ" page="20" side="right">
+      <div style={{ padding: '90px 50px 60px' }}>
+        <SectionMarker>наставак</SectionMarker>
+        <div className="headline" style={{ marginTop: 12, fontSize: 56, lineHeight: 0.94 }}>
+          Ликовни <em>радови</em>.
         </div>
-        {/* Portrait 5–7 */}
-        <div style={{ marginTop: 6, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 6 }}>
-          {portrait.slice(4).map(n => img(n, 218))}
-        </div>
-
-        {/* Landscape 8–10 */}
-        <div style={{ marginTop: 12, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 6 }}>
-          {landscape.slice(0, 3).map(n => img(n, 140))}
-        </div>
-        {/* Landscape 11–12 */}
-        <div style={{ marginTop: 6, display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 6 }}>
-          {landscape.slice(3).map(n => img(n, 193))}
-        </div>
+        <LikovnaGrid images={images} />
       </div>
     </PageShell>
   );
 }
 
 Object.assign(window, {
-  PagePoemsNikolina1, PagePoemsNikolina2, PagePoemsOci, PageLikovniRadovi,
+  PagePoemsNikolina1, PagePoemsNikolina2, PagePoemsOci, PageLikovniRadovi, PageLikovniRadovi2,
 });

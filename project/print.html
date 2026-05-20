@@ -25,11 +25,11 @@
       position: relative;
     }
     @media print {
-      html, body { background: white; }
-      #pages { padding: 0; }
+      html, body { background: white; margin: 0 !important; padding: 0 !important; }
+      #pages { padding: 0; margin: 0; }
       .print-page {
-        width: 210mm;
-        height: 297mm;
+        width: 190.5mm;
+        height: 285.75mm;
         margin: 0;
         overflow: hidden;
         box-shadow: none;
@@ -45,12 +45,11 @@
         width: 720px;
         height: 1080px;
         top: 0;
-        left: 50%;
-        transform: translateX(-360px) scale(1.0394);
-        transform-origin: top left;
+        left: 0;
+        transform: none;
       }
     }
-    @page { size: A4 portrait; margin: 0; }
+    @page { size: 190.5mm 285.75mm; margin: 0mm; }
   </style>
 
   <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin></script>
@@ -90,6 +89,7 @@
       PagePoemsNikolina2,
       PagePoemsOci,
       PageLikovniRadovi,
+      PageLikovniRadovi2,
       PageSah,
       PageStrucnaUsavrsavanja,
       PageMedjunarodniDani,

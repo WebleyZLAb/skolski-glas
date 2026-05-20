@@ -69,10 +69,13 @@ function App() {
         <DCArtboard id="pesme-oci" label="22 · Очи × 2" width={W} height={H}>
           <PageWrap width={W} height={H}><PagePoemsOci /></PageWrap>
         </DCArtboard>
-        <DCArtboard id="likovni" label="23 · Ликовни радови" width={W} height={H}>
+        <DCArtboard id="likovni" label="23 · Ликовни радови (1)" width={W} height={H}>
           <PageWrap width={W} height={H}><PageLikovniRadovi /></PageWrap>
         </DCArtboard>
-        <DCArtboard id="sah" label="24 · Шах у нашој школи" width={W} height={H}>
+        <DCArtboard id="likovni-2" label="24 · Ликовни радови (2)" width={W} height={H}>
+          <PageWrap width={W} height={H}><PageLikovniRadovi2 /></PageWrap>
+        </DCArtboard>
+        <DCArtboard id="sah" label="25 · Шах у нашој школи" width={W} height={H}>
           <PageWrap width={W} height={H}><PageSah /></PageWrap>
         </DCArtboard>
       </DCSection>

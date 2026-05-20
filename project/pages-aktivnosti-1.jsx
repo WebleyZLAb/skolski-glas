@@ -9,7 +9,7 @@ function PageAktivnostiOpener() {
     { title: 'Школска такмичења',               page: '13' },
     { title: 'Успјеси на конкурсима',           page: '14' },
     { title: 'Ликовни и литерарни радови',      page: '15' },
-    { title: 'Шах у нашој школи',               page: '20' },
+    { title: 'Шах у нашој школи',               page: '21' },
   ];
 
   return (

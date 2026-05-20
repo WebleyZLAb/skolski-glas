@@ -22,7 +22,7 @@ function PageSah() {
   ];
 
   return (
-    <PageShell accent="var(--navy)" section="ШАХ · АКТИВНОСТИ" page="20" side="right">
+    <PageShell accent="var(--navy)" section="ШАХ · АКТИВНОСТИ" page="21" side="right">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>04 · Активности</SectionMarker>
         <div className="headline" style={{ marginTop: 12, fontSize: 56, lineHeight: 0.94 }}>
@@ -116,7 +116,7 @@ function PageStrucnaUsavrsavanja() {
 Наставници наше школе учествовали су на вебинарима и семинарима који су планирани у овој школској години.`;
 
   return (
-    <PageShell accent="var(--purple)" section="СТРУЧНА УСАВРШАВАЊА" page="21" side="left">
+    <PageShell accent="var(--purple)" section="СТРУЧНА УСАВРШАВАЊА" page="22" side="left">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>05 · Радници школе</SectionMarker>
         <div className="headline" style={{ marginTop: 14, fontSize: 54, lineHeight: 0.94 }}>
@@ -190,7 +190,7 @@ function PageMedjunarodniDani() {
     'var(--blue)', 'var(--orange)', 'var(--teal-deep)'];
 
   return (
-    <PageShell accent="var(--blue-bright)" section="МЕЂУНАРОДНИ ДАНИ" page="22" side="right">
+    <PageShell accent="var(--blue-bright)" section="МЕЂУНАРОДНИ ДАНИ" page="23" side="right">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>06 · Обиљежавања</SectionMarker>
         <div className="headline" style={{ marginTop: 14, fontSize: 50, lineHeight: 0.95 }}>
@@ -272,7 +272,7 @@ function PageZanimljivosti() {
   ];
 
   return (
-    <PageShell accent="var(--orange-deep)" section="ВЕСЕЛА СТРАНИЦА" page="23" side="left">
+    <PageShell accent="var(--orange-deep)" section="ВЕСЕЛА СТРАНИЦА" page="24" side="left">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>07 · За крај</SectionMarker>
         <div className="headline" style={{ marginTop: 14, fontSize: 64, lineHeight: 0.94 }}>
@@ -334,7 +334,7 @@ function PageZanimljivosti2() {
   ];
 
   return (
-    <PageShell accent="var(--teal)" section="ЗАНИМЉИВОСТИ" page="24" side="right">
+    <PageShell accent="var(--teal)" section="ЗАНИМЉИВОСТИ" page="25" side="right">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>07 · За крај</SectionMarker>
         <div className="headline" style={{ marginTop: 14, fontSize: 64, lineHeight: 0.94 }}>
@@ -369,7 +369,7 @@ function PageZanimljivosti2() {
 // 30 — ЗАКЉУЧАК
 function PageZakljucak() {
   return (
-    <PageShell accent="var(--navy)" section="ЗАКЉУЧАК" page="25" side="right" bg="mag-page--cream">
+    <PageShell accent="var(--navy)" section="ЗАКЉУЧАК" page="26" side="right" bg="mag-page--cream">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>08 · За крај</SectionMarker>
         <div className="headline" style={{ marginTop: 14, fontSize: 70, lineHeight: 1.05 }}>
@@ -394,6 +394,11 @@ function PageZakljucak() {
                 Дом здравља Козарска Дубица · СПЦО Кнежица · ОСЦК Козарска Дубица ·
                 АМД Козара · ТВЈ Козарска Дубица · и многи други добри људи.
               </div>
+            </div>
+
+            <div style={{ marginTop: 20 }}>
+              <img src="assets/qr.png" alt="" style={{ width: 160, height: 160, objectFit: 'contain', display: 'block' }} />
+              <div className="photo-caption" style={{ textAlign: 'center', fontSize: 12, color: 'var(--ink)', width: 160 }}>Скенирај да прочиташ!</div>
             </div>
           </div>
 
