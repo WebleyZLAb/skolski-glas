@@ -134,7 +134,7 @@ function PageStrucnaUsavrsavanja() {
             <Photo src="assets/sajam.jpg" label="САЈАМ КЊИГА · БЕОГРАД" height={200}
               caption="Наставници на 68. Међународном сајму књига." />
 
-            <Photo src="assets/zezelj.jpg" label="СВЕТОСАВСКИ БАЛ · ПЛАКЕТА" height={200}
+            <Photo src="assets/zezelj.jpg" height={200}
               caption="Жељко Жежељ прима плакету за изузетан допринос образовању и васпитању." />
 
             <div style={{ background: 'var(--cream)', padding: '14px 16px',
