@@ -35,7 +35,7 @@ function PageTOC() {
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>Број 18 · мај 2026.</SectionMarker>
         <div className="headline headline-xl" style={{ marginTop: 14, fontSize: 88, lineHeight: 0.92 }}>
-          Шта<br />читамо <em style={{ fontFamily: 'var(--script)', fontWeight: 700, fontSize: 86 }}>унутра?</em>
+          Шта можете<br /><em style={{ fontFamily: 'var(--script)', fontWeight: 700, fontSize: 86 }}>прочитати?</em>
         </div>
         <div className="deck" style={{ marginTop: 14, maxWidth: 540 }}>Школска 2025/26. година — у причама, такмичењима, приредбама, пјесмама и сјећањима која остају у нашим ходницима.
 
