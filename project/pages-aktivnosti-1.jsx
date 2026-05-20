@@ -149,8 +149,8 @@ function PageSaradnja1() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
             <Photo src="assets/plaketa.jpg" label="ОПШТИНА · 27. АПРИЛ" height={222}
               caption="Плакета општине Козарска Дубица за дугогодишњи допринос унапређењу васпитно-образовног, културног и спортског живота ученика наше школе и друштвене заједнице." />
-            <Photo src="" label="ФОТОГРАФИЈА" height={180}
-              caption="Опис фотографије." />
+            <Photo src="assets/policija.jpg" height={180}
+              caption="Првачићи у посјети полицијској станици." />
           </div>
         </div>
       </div>
