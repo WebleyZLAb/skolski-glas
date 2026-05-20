@@ -130,7 +130,7 @@ function PageStrucnaUsavrsavanja() {
         </div>
 
         <div style={{ marginTop: 26, display: 'grid', gridTemplateColumns: '1.3fr 1fr', gap: 26, alignItems: 'start' }}>
-          <ArticleBody text={body} dropcap style={{ fontSize: 11, lineHeight: 1.5 }} />
+          <ArticleBody text={body} dropcap style={{ fontSize: 11.5, lineHeight: 1.5 }} />
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
             <Photo src="assets/sajam.jpg" label="САЈАМ КЊИГА · БЕОГРАД" height={170}
