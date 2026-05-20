@@ -257,7 +257,7 @@ function PageLikovniRadovi() {
   const images = [
     { file: '1. Уна Ковачић - VII2.jpg',         name: 'Уна Ковачић',         razred: 'VII-2' },
     { file: '2 .Александра Ритан - VIII2.jpg',  name: 'Александра Ритан',    razred: 'VIII-2' },
-    { file: '3. Сара Мандић - III1.jpg',        name: 'Сара Мандић',         razred: 'III-1' },
+    { file: '3. Сара Мандић - IV1.jpg',         name: 'Сара Мандић',         razred: 'IV-1' },
     { file: '4. Николина Раниловић - VIII1.jpg', name: 'Николина Раниловић', razred: 'VIII-1' },
     { file: '5. Дариа Личанин - VII2.jpg',      name: 'Дариа Личанин',       razred: 'VII-2' },
     { file: '6. Анђела Родић - VII1.jpg',       name: 'Анђела Родић',        razred: 'VII-1' },
