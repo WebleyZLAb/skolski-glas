@@ -134,30 +134,14 @@ function PageStrucnaUsavrsavanja() {
             <Photo src="assets/sajam.jpg" label="САЈАМ КЊИГА · БЕОГРАД" height={200}
               caption="Наставници на 68. Међународном сајму књига." />
 
+            <Photo src="assets/zezelj.jpg" label="СВЕТОСАВСКИ БАЛ · ПЛАКЕТА" height={200}
+              caption="Жељко Жежељ прима плакету за изузетан допринос образовању и васпитању." />
+
             <div style={{ background: 'var(--cream)', padding: '14px 16px',
-              borderLeft: '3px solid var(--purple)' }}>
-              <div style={{ fontFamily: 'var(--sans)', fontSize: 10, letterSpacing: '0.24em',
-                fontWeight: 800, color: 'var(--purple)', textTransform: 'uppercase' }}>
-                Догађаји · 2025/26.
-              </div>
-              <div style={{ marginTop: 10, display: 'flex', flexDirection: 'column', gap: 8 }}>
-                {[
-                  ['68. сајам књига', 'Београд'],
-                  ['Снага тима у В/О систему', 'Бијељина · 3.4.'],
-                  ['17. школа директора', 'РПЗ · 3—5.3.'],
-                  ['Савјетовање учитеља', 'Теслић'],
-                  ['Вредновање квалитета', 'РПЗ инспекција'],
-                ].map(([t, sub], i) => (
-                  <div key={i} style={{ borderTop: i ? '1px solid var(--line)' : 'none', paddingTop: i ? 8 : 0 }}>
-                    <div style={{ fontFamily: 'var(--sans)', fontSize: 11.5, fontWeight: 800, color: 'var(--ink)' }}>
-                      {t}
-                    </div>
-                    <div style={{ fontFamily: 'var(--serif)', fontSize: 10.5, fontStyle: 'italic',
-                      color: 'var(--ink-soft)', marginTop: 2 }}>
-                      {sub}
-                    </div>
-                  </div>
-                ))}
+              borderLeft: '3px solid var(--purple)', marginTop: 0 }}>
+              <div style={{ fontFamily: 'var(--serif)', fontSize: 13, lineHeight: 1.6,
+                color: 'var(--ink)', fontStyle: 'italic' }}>
+                „На Светосавском балу, наставнику наше школе Жељку Жежељу додијељена је плакета за изузетан допринос образовању и васпитању."
               </div>
             </div>
           </div>
