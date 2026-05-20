@@ -372,7 +372,7 @@ function PageZakljucak() {
     <PageShell accent="var(--navy)" section="ЗАКЉУЧАК" page="25" side="right" bg="mag-page--cream">
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>08 · За крај</SectionMarker>
-        <div className="headline" style={{ marginTop: 14, fontSize: 70, lineHeight: 0.94 }}>
+        <div className="headline" style={{ marginTop: 14, fontSize: 70, lineHeight: 1.05 }}>
           Заједно стварамо<br/>
           најљепше <em>успомене</em>.
         </div>
