@@ -136,7 +136,7 @@ function PageStrucnaUsavrsavanja() {
             <Photo src="assets/sajam.jpg" label="САЈАМ КЊИГА · БЕОГРАД" height={170}
               caption="Наставници на 68. Међународном сајму књига." />
 
-            <Photo src="assets/zezelj.jpg" height={210} style={{ objectPosition: 'center 15%' }}
+            <Photo src="assets/zezelj.jpg" height={210} style={{ objectPosition: 'center 5%' }}
               caption={'Зоран Синкић, предсједник СПКД „Просвјета", додјељује плакету нашем наставнику.'} />
 
             <div style={{ background: 'var(--cream)', padding: '12px 16px',
