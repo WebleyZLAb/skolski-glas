@@ -135,7 +135,7 @@ function PageStrucnaUsavrsavanja() {
               caption="Наставници на 68. Међународном сајму књига." />
 
             <Photo src="assets/zezelj.jpg" height={200}
-              caption="Зоран Синкић, предсједник СПКД „Просвјета", додјељује плакету нашем наставнику." />
+              caption={'Зоран Синкић, предсједник СПКД „Просвјета", додјељује плакету нашем наставнику.'} />
 
             <div style={{ background: 'var(--cream)', padding: '14px 16px',
               borderLeft: '3px solid var(--purple)', marginTop: 0 }}>
