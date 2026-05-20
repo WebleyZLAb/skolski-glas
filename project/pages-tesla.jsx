@@ -54,7 +54,7 @@ function PagePripremni() {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             <Photo src="assets/pripremni-program.jpg" label="ПРИПРЕМНИ ПРОГРАМ" height={185}
-              caption="Радионица у припремној групи, март 2026." />
+              caption="Полазници припремног програма, март 2026." />
             <InfoBox label="Водитељ програма">
               <div style={{ fontFamily: 'var(--sans)', fontWeight: 800, color: 'var(--ink)', fontSize: 13, marginTop: 2 }}>
                 учитељ Бојан Сантрач
