@@ -80,6 +80,12 @@ function App() {
         </DCArtboard>
       </DCSection>
 
+      <DCSection id="plakat" title="Плакат · QR код" subtitle="За штампање и лијепљење на врата">
+        <DCArtboard id="plakat-qr" label="Плакат · QR код" width={W} height={H}>
+          <PageWrap width={W} height={H}><PagePlakat /></PageWrap>
+        </DCArtboard>
+      </DCSection>
+
       <DCSection id="back" title="Радници, дани, закључак" subtitle="Поглавља 05–08">
         <DCArtboard id="strucna" label="25 · Стручна усавршавања" width={W} height={H}>
           <PageWrap width={W} height={H}><PageStrucnaUsavrsavanja /></PageWrap>
