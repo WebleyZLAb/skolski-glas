@@ -326,6 +326,10 @@ function PageSaradnja3() {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
             <ArticleBody text={bodyPark2} style={{ fontSize: 12, lineHeight: 1.6 }} />
+            <Photo src="assets/kolaz-radovi.png" height={160}
+              caption="Радови на љетњој учионици." />
+            <Photo src="assets/ljetnja-ucionica.jpg" height={160}
+              caption="Љетња учионица." />
           </div>
         </div>
       </div>
