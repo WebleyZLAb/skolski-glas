@@ -302,8 +302,8 @@ function PageSaradnja3() {
       <div style={{ padding: '90px 50px 60px' }}>
         <SectionMarker>наставак</SectionMarker>
         <div className="headline" style={{ marginTop: 12, fontSize: 42, lineHeight: 0.96 }}>
-          Тениски терен<br/>
-          спреман за <em>игру</em>.
+          Школски простор<br/>
+          спреман за <em>рад и игру</em>.
         </div>
         <div className="deck" style={{ marginTop: 12 }}>
           Локална заједница, спортски клуб и школа заједно уредили терен
@@ -313,29 +313,11 @@ function PageSaradnja3() {
         <div style={{ marginTop: 22, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 22, alignItems: 'start' }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             <ArticleBody text={body} dropcap style={{ fontSize: 12, lineHeight: 1.6 }} />
-
-            <div style={{ padding: '14px 16px', background: 'var(--cream)', borderLeft: '3px solid var(--orange)' }}>
-              <div style={{ fontFamily: 'var(--sans)', fontSize: 10, letterSpacing: '0.22em',
-                fontWeight: 800, textTransform: 'uppercase', color: 'var(--orange-deep)', marginBottom: 8 }}>
-                Захваљујемо
-              </div>
-              {[
-                'Марко Танкосић, замјеник начелника општине Козарска Дубица',
-                'Тениски клуб „Младен Стојановић", Приједор',
-                'учитељ Бојан Сантрач и ученици школе',
-              ].map((name, i) => (
-                <div key={i} style={{ fontFamily: 'var(--sans)', fontSize: 11, fontWeight: 700,
-                  color: 'var(--ink)', padding: '5px 0',
-                  borderTop: i ? '1px solid var(--line)' : 'none' }}>
-                  {name}
-                </div>
-              ))}
-            </div>
+            <Photo src="assets/tenis.jpg" label="ТЕНИСКИ ТЕРЕН · КНЕЖИЦА" height={220}
+              caption="Уређивање тениског терена у Кнежици." />
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
-            <Photo src="assets/tenis.jpg" label="ТЕНИСКИ ТЕРЕН · КНЕЖИЦА" height={220}
-              caption="Уређивање тениског терена у Кнежици." />
           </div>
         </div>
       </div>
