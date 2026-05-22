@@ -313,7 +313,7 @@ function PageSaradnja3() {
         <div style={{ marginTop: 22, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 22, alignItems: 'start' }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             <ArticleBody text={body} dropcap style={{ fontSize: 12, lineHeight: 1.6 }} />
-            <Photo src="assets/tenis.jpg" label="ТЕНИСКИ ТЕРЕН · КНЕЖИЦА" height={220}
+            <Photo src="assets/tenis.jpg" label="ТЕНИСКИ ТЕРЕН · КНЕЖИЦА" height={190}
               caption="Уређивање тениског терена у Кнежици." />
           </div>
 
